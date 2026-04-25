@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="{{@site.locale}}">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{meta_title}}</title>
+
+    <!-- Google Fonts: Playfair Display for headings, Inter for body and UI -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+
+    {{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+
+    <div class="site-wrapper">
+
+        <!-- Sticky Header -->
+        <header class="site-header">
+            <div class="header-inner">
+                <div class="site-brand">
+                    <a class="site-logo" href="{{@site.url}}">
+                        <!-- If logo image exists, show it. The text logo remains fixed next to it per design -->
+                        {{#if @site.logo}}
+                        <img src="{{@site.logo}}" alt="{{@site.title}}" class="logo-img-mark" />
+                        {{/if}}
+                        <div class="logo-text">
+                            <h1>Viện Bảo tồn Di tích</h1>
+                            <span>Heritage Conservation Institute</span>
+                        </div>
+                    </a>
+                </div>
+                <nav class="site-nav">
+                    {{> "custom-navigation"}}
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="site-main">
+            {{{body}}}
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <div class="footer-columns">
+                    <div class="footer-col brand-col">
+                        <h3>Viện Bảo tồn Di tích</h3>
+                        <p>Giữ gìn nền móng văn hiến. Kiến tạo giá trị tương lai.</p>
+                        <ul class="contact-list">
+                            <li><strong>Địa chỉ:</strong> 489 Nguyễn Trãi, Thanh Xuân, Hà Nội</li>
+                            <li><strong>Điện thoại:</strong> (024) 3858 5225</li>
+                            <li><strong>Email:</strong> vienbaotonditich@vhttdl.gov.vn</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col links-col">
+                        <h4>Chuyên Mục Chính</h4>
+                        <ul class="clean-list">
+                            {{#get "tags" limit="6" filter="visibility:public" order="count.posts desc" include="count.posts"}}
+                                {{#foreach tags}}
+                                    <li><a href="{{url}}">{{name}} <span style="opacity:0.6; font-size:0.8rem;">({{count.posts}})</span></a></li>
+                                {{/foreach}}
+                            {{else}}
+                                <li><a href="/">Đang cập nhật...</a></li>
+                            {{/get}}
+                        </ul>
+                    </div>
+
+                    <div class="footer-col links-col">
+                        <h4>Mới Cập Nhật</h4>
+                        <ul class="clean-list">
+                            {{#get "posts" limit="4" filter="visibility:public"}}
+                                {{#foreach posts}}
+                                    <li><a href="{{url}}" title="{{title}}">{{title}}</a></li>
+                                {{/foreach}}
+                            {{else}}
+                                <li><a href="/">Đang bảo tồn văn bản...</a></li>
+                            {{/get}}
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col links-col">
+                        <h4>Liên Kết & Tra Cứu</h4>
+                        <ul class="clean-list">
+                            {{navigation type="secondary"}}
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; {{date format="YYYY"}} <a href="{{@site.url}}">{{@site.title}}</a>. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    <!-- Scripts -->
+    {{ghost_foot}}
+</body>
+</html>

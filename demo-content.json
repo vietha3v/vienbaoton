@@ -1,0 +1,106 @@
+{
+  "db": [
+    {
+      "meta": {
+        "exported_on": 1729012345000,
+        "version": "5.0.0"
+      },
+      "data": {
+        "tags": [
+          {
+            "id": "tag_tintuc",
+            "name": "Tin tức",
+            "slug": "tin-tuc",
+            "description": "Tin tức hoạt động chuyên ngành bảo tồn",
+            "visibility": "public",
+            "created_at": "2026-03-31T09:00:00.000Z",
+            "updated_at": "2026-03-31T09:00:00.000Z"
+          },
+          {
+            "id": "tag_nghiencuu",
+            "name": "Nghiên cứu",
+            "slug": "nghien-cuu",
+            "description": "Nghiên cứu khoa học và bảo tồn",
+            "visibility": "public",
+            "created_at": "2026-03-31T09:00:00.000Z",
+            "updated_at": "2026-03-31T09:00:00.000Z"
+          }
+        ],
+        "posts": [
+          {
+            "id": "post_1",
+            "title": "Khởi công dự án tu bổ, tôn tạo quần thể kiến trúc Đình làng Bắc Bộ",
+            "slug": "khoi-cong-du-an-tu-bo-dinh-lang-bac-bo",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Trải qua hơn 300 năm lịch sử, quần thể Đình làng với nghệ thuật chạm khắc gỗ tinh xảo đang đứng trước nguy cơ xuống cấp nghiêm trọng do tác động của khí hậu nhiệt đới gió mùa ẩm.</p><p>Hôm nay, Viện Bảo tồn Di tích phối hợp cùng Cục Di sản Văn hóa chính thức khởi động dự án trùng tu với quy mô lớn. Tôn chỉ của dự án là “bảo tồn tối đa yếu tố gốc, giữ gìn hồn cốt của di tích”. Các chuyên gia sẽ tiến hành thay thế các cấu kiện gỗ mọt ruỗng bằng kỹ thuật ghép mộng mộc truyền thống, sử dụng gỗ lim xanh nguyên khối và hoàn thiện bề mặt bằng sơn ta (sơn then, sơn cánh gián) thay vì hóa chất hiện đại. Dự kiến công trình sẽ hoàn thành vào cuối năm 2026, trả lại vẻ đẹp uy nghiêm vốn có cho chốn linh thiêng của làng quê Bắc Bộ.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-03-31T09:05:00.000Z",
+            "updated_at": "2026-03-31T09:05:00.000Z",
+            "published_at": "2026-03-31T09:05:00.000Z",
+            "custom_excerpt": "Dự án phục dựng quần thể kiến trúc gỗ lâu đời Bắc Bộ...",
+            "feature_image": "https://images.unsplash.com/photo-1620025178619-2ea1ebcdaed8"
+          },
+          {
+            "id": "post_2",
+            "title": "Giải mã hoa văn Tứ Linh trên gốm sứ thời Lý - Trần",
+            "slug": "giai-ma-hoa-van-tu-linh-tren-gom-su",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Những mảnh gốm sứ Hoàng thành Thăng Long không chỉ là vật dụng sinh hoạt mà còn là pho sử liệu vô giá về quan niệm thẩm mỹ và tâm linh của người Việt xưa.</p><p>Hình tượng Tứ Linh (Long, Lân, Quy, Phụng) xuất hiện dày đặc trên các bát đĩa, thạp gốm hoa nâu và men ngọc thời Lý - Trần mang một hơi thở hoàn toàn khác biệt so với các triều đại sau này. Ở giai đoạn này, thân rồng uốn lượn thon dài như hình sin, đầu rồng có mào lửa vút cao mang đậm yếu tố vương quyền và Phật giáo. Thông qua các phân tích quang phổ và đối chiếu hình thái học, viện nghiên cứu đã phác họa lại thành công bộ hoa văn chuẩn mực, tạo tiền đề cho công tác phục chế các cổ vật bị nứt vỡ, đồng thời cung cấp tư liệu cho các làng nghề thủ công truyền thống đương đại.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-03-31T09:04:00.000Z",
+            "updated_at": "2026-03-31T09:04:00.000Z",
+            "published_at": "2026-03-31T09:04:00.000Z",
+            "custom_excerpt": "Khám phá nét chạm trổ vương quyền trên cổ vật gốm sứ Lý Trần...",
+            "feature_image": "https://images.unsplash.com/photo-1624383424164-9b8ee206cb55"
+          },
+          {
+            "id": "post_3",
+            "title": "Áp dụng công nghệ Scan 3D trong lưu trữ Hồ sơ cấu kiện gỗ Chùa Cổ",
+            "slug": "ap-dung-cong-nghe-scan-3d-trong-luu-tru",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Nhằm đối phó với nguy cơ hư hại tài liệu bản vẽ giấy theo thời gian, số hóa di sản đang trở thành một nhiệm vụ cấp bách. Tháng này, ban công nghệ của Viện Bảo tồn đã tiến hành quét laser 3D (3D Scanning) toàn bộ hệ thống vì kèo và mảng chạm lộng tại tòa Đại Bái của Chùa.</p><p>Công nghệ này không chỉ ghi nhận chính xác đến từng milimet kích thước của hệ thống cột trụ mà còn bóc tách chi tiết độ nông sâu của các bức chạm khắc sự tích Phật giáo. Từ kho tàng dữ liệu số khổng lồ (Point Cloud), chúng ta có thể kết xuất thành các cấu hình VR (Thực tế ảo), cho phép người tham quan tương tác trực tiếp với kiến trúc di tích trên không gian mạng, đồng thời lưu trữ vĩnh viễn 'bản sao kỹ thuật số' phòng khi có sự cố hỏa hoạn hay thiên tai.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-03-31T09:03:00.000Z",
+            "updated_at": "2026-03-31T09:03:00.000Z",
+            "published_at": "2026-03-31T09:03:00.000Z",
+            "custom_excerpt": "Số hóa cấu kiện kiến trúc cổ bằng tia Laser quét 3 chiều độ phân giải cao...",
+            "feature_image": "https://images.unsplash.com/photo-1590412850756-74fc245f7fbc"
+          },
+          {
+            "id": "post_4",
+            "title": "Nghệ thuật nạm khảm xà cừ trên Hoành phi, Câu đối: Gốc nhìn phục chế",
+            "slug": "nghe-thuat-nam-kham-xa-cu",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Chơi hoành phi, câu đối khảm xà cừ từng là thú vui tao nhã mang tính Nho học của các tầng lớp sĩ phu xưa. Đặc tính của vỏ ốc, vỏ trai biển là khả năng tán sặc ánh sáng tạo ra ngũ sắc lấp lánh bền bỉ hàng trăm năm. Tuy nhiên, thời tiết khắc nghiệt thường làm lớp keo động vật bị lão hóa khiến các mảnh khảm bị bong tróc.</p><p>Đợt tu bổ gần nhất tại các nhà thờ họ cổ tại miền Trung, các nghệ nhân đã sử dụng kỹ thuật nấu keo da kết hợp với nhựa cây dán truyền thống nhằm dán lại hàng ngàn mảnh khảm li ti dài chưa tới 2mm. Phục chế hoành phi không chỉ đòi hỏi bàn tay tài hoa mà còn phải có kiến thức tinh thâm về Hán Nôm để tránh việc ráp sai nét chữ, làm sai lệch ý nghĩa tiền nhân gửi gắm.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-03-31T09:02:00.000Z",
+            "updated_at": "2026-03-31T09:02:00.000Z",
+            "published_at": "2026-03-31T09:02:00.000Z",
+            "custom_excerpt": "Gặp lại nét khảm xà cừ thất truyền qua lăng kính bảo tồn...",
+            "feature_image": "https://images.unsplash.com/photo-1559592413-7cea4ee49d5a"
+          },
+          {
+            "id": "post_5",
+            "title": "Triển lãm trưng bày Báu vật triều đại: Đánh thức di sản",
+            "slug": "trien-lam-trung-bay-bau-vat-trieu-dai",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Góp mặt trong chuỗi sự kiện giao lưu văn hóa châu Á năm nay, Viện sẽ chính thức khai mạc không gian triển lãm đặc biệt mang tên 'Báu vật triều đại'.</p><p>Điểm nhấn của buổi triển lãm là bộ sưu tập các ấn tín bằng vàng, ngọc tỷ và trang sức cung đình bằng kỹ thuật chạm đậu tinh xảo lần đầu tiên được mang ra ánh sáng sau nhiều thập kỷ cất giữ trong kho bảo quản đặc biệt. Không gian ánh sáng được thiết kế cực kỳ hiện đại với cường độ Lux tiêu chuẩn, đảm bảo phô diễn được trọn vẹn vẻ đẹp lộng lẫy của cổ vật nhưng tuyệt đối không làm ảnh hưởng đến cấu trúc bức xạ của hiện vật. Kính mời quý khách thập phương và những nhà nghiên cứu đến thưởng lãm và sống lại trong dòng sử thi hào hùng của dân tộc.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-03-31T09:01:00.000Z",
+            "updated_at": "2026-03-31T09:01:00.000Z",
+            "published_at": "2026-03-31T09:01:00.000Z",
+            "custom_excerpt": "Triển lãm đánh thức kho tàng di sản cung đình...",
+            "feature_image": "https://images.unsplash.com/photo-1582299860647-75b8e976db57"
+          }
+        ],
+        "posts_tags": [
+          { "post_id": "post_1", "tag_id": "tag_tintuc", "sort_order": 0 },
+          { "post_id": "post_2", "tag_id": "tag_nghiencuu", "sort_order": 0 },
+          { "post_id": "post_3", "tag_id": "tag_tintuc", "sort_order": 0 },
+          { "post_id": "post_4", "tag_id": "tag_nghiencuu", "sort_order": 0 },
+          { "post_id": "post_5", "tag_id": "tag_tintuc", "sort_order": 0 }
+        ]
+      }
+    }
+  ]
+}

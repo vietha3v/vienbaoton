@@ -1,0 +1,77 @@
+# --- Ghost CMS ---
+
+# Ghost core (versioned, installed by Ghost CLI)
+/versions/
+
+# Current symlink to active version
+/current
+
+# Ghost local database (SQLite - dev only, not for production)
+content/data/
+
+# Ghost logs
+content/logs/
+
+# Ghost built/compiled assets
+content/public/
+
+# Ghost uploads (user-uploaded images, files)
+# Comment out if you want to track default theme images
+content/images/
+
+# Ghost CLI
+.ghostpid
+.ghost-cli
+
+# Ghost adaptive images cache
+__ghost_cache__/
+
+# --- Next.js Frontend (vienbaoton-fe) ---
+
+# dependencies
+vienbaoton-fe/node_modules/
+vienbaoton-fe/.pnp
+vienbaoton-fe/.pnp.*
+
+# next.js
+vienbaoton-fe/.next/
+vienbaoton-fe/out/
+
+# production
+vienbaoton-fe/build
+
+# env files
+vienbaoton-fe/.env
+vienbaoton-fe/.env.local
+vienbaoton-fe/.env.production
+
+# vercel
+vienbaoton-fe/.vercel
+
+# typescript
+vienbaoton-fe/*.tsbuildinfo
+vienbaoton-fe/next-env.d.ts
+
+# --- General ---
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Editor directories
+.idea/
+.vscode/
+*.sublime-*
+
+# Environment files
+.env
+.env.local
+.env.production

@@ -1,0 +1,21 @@
+{{!< default}}
+
+{{#post}}
+<article class="single-post page-post {{post_class}}">
+
+    <header class="single-header">
+        <h1 class="single-title">{{title}}</h1>
+    </header>
+
+    {{#if feature_image}}
+        <figure class="single-feature-image">
+            <img src="{{feature_image}}" alt="{{title}}" />
+        </figure>
+    {{/if}}
+
+    <section class="single-content gh-content">
+        {{content}}
+    </section>
+
+</article>
+{{/post}}
