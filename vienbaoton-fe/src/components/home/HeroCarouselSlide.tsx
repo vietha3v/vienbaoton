@@ -25,30 +25,28 @@ export default function HeroCarouselSlide({ post, active }: HeroCarouselSlidePro
 
   return (
     <div className={`hero-slide ${active ? "active" : ""}`}>
-      <div className="hero-grid">
-        <div className="hero-content">
-          <div className="hero-meta">
-            {post.primary_tag ? post.primary_tag.name : "TIÊU ĐIỂM"} • {readingTimeText}
-          </div>
-          <h1 className="hero-title">{post.title}</h1>
-          <p className="hero-excerpt">{truncate(post.excerpt, 30)}...</p>
-          <div className="hero-author-date">
-            <span>{post.primary_author?.name}</span> &bull;{" "}
-            <time>{formatDate(post.published_at)}</time>
-          </div>
-          <Link href={`/${post.slug}`} className="btn-primary">
-            Đọc chi tiết
-          </Link>
-        </div>
-        <div className="hero-image-wrapper">
+      <div className="hero-slide-inner">
+        {post.feature_image && (
           <div
-            className="hero-image-mask"
-            style={{
-              backgroundImage: post.feature_image
-                ? `url('${post.feature_image}')`
-                : undefined,
-            }}
+            className="hero-bg-image"
+            style={{ backgroundImage: `url('${post.feature_image}')` }}
           />
+        )}
+        <div className="hero-content-wrapper">
+          <div className="hero-content-inner">
+            <div className="hero-meta">
+              {post.primary_tag ? post.primary_tag.name : "TIÊU ĐIỂM"} • {readingTimeText}
+            </div>
+            <h1 className="hero-title">{post.title}</h1>
+            <p className="hero-excerpt">{truncate(post.excerpt, 30)}...</p>
+            <div className="hero-author-date">
+              <span>{post.primary_author?.name}</span> &bull;{" "}
+              <time>{formatDate(post.published_at)}</time>
+            </div>
+            <Link href={`/${post.slug}`} className="hero-btn">
+              Đọc chi tiết
+            </Link>
+          </div>
         </div>
       </div>
     </div>

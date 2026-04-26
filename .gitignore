@@ -26,31 +26,31 @@ content/images/
 # Ghost adaptive images cache
 __ghost_cache__/
 
-# --- Next.js Frontend (vienbaoton-fe) ---
+# --- Next.js Frontend (**) ---
 
 # dependencies
-vienbaoton-fe/node_modules/
-vienbaoton-fe/.pnp
-vienbaoton-fe/.pnp.*
+**/node_modules/
+**/.pnp
+**/.pnp.*
 
 # next.js
-vienbaoton-fe/.next/
-vienbaoton-fe/out/
+**/.next/
+**/out/
 
 # production
-vienbaoton-fe/build
+**/build
 
 # env files
-vienbaoton-fe/.env
-vienbaoton-fe/.env.local
-vienbaoton-fe/.env.production
+**/.env
+**/.env.local
+**/.env.production
 
 # vercel
-vienbaoton-fe/.vercel
+**/.vercel
 
 # typescript
-vienbaoton-fe/*.tsbuildinfo
-vienbaoton-fe/next-env.d.ts
+**/*.tsbuildinfo
+**/next-env.d.ts
 
 # --- General ---
 
