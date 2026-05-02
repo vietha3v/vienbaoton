@@ -1,7 +1,9 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { getTranslations, getLocale } from "next-intl/server";
 import { getPostBySlug, getPageBySlug, getRelatedPosts, getAllSlugs, getSettings } from "@/lib/ghost";
 import type { GhostPost, GhostPage } from "@/lib/ghost";
+import { formatDate } from "@/lib/dates";
 import FeatureImage from "@/components/post/FeatureImage";
 import RelatedPosts from "@/components/post/RelatedPosts";
 import HeritageTimeline from "@/components/page/HeritageTimeline";
@@ -20,7 +22,6 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-
   try {
     const post = await getPostBySlug(slug);
     return {
@@ -43,14 +44,14 @@ export async function generateMetadata({
   }
 }
 
-function formatDate(date: string) {
-  const d = new Date(date);
-  return `${String(d.getDate()).padStart(2, "0")}/${String(d.getMonth() + 1).padStart(2, "0")}/${d.getFullYear()}`;
-}
+async function PostView({ post, relatedPosts, locale }: { post: GhostPost; relatedPosts: GhostPost[]; locale: string }) {
+  const t = await getTranslations("HomePage");
+  const pt = await getTranslations("PostPage");
 
-function PostView({ post, relatedPosts }: { post: GhostPost; relatedPosts: GhostPost[] }) {
   const readingTimeText =
-    post.reading_time <= 1 ? "1 phút đọc" : `${post.reading_time} phút đọc`;
+    post.reading_time <= 1
+      ? t("reading_time_1")
+      : t("reading_time", { count: post.reading_time });
 
   return (
     <div className="post-container">
@@ -64,10 +65,10 @@ function PostView({ post, relatedPosts }: { post: GhostPost; relatedPosts: Ghost
           <h1 className="single-title">{post.title}</h1>
           <div className="single-meta">
             <span className="meta-author">
-              Chấp bút: {post.authors?.map((a) => a.name).join(", ")}
+              {pt("by_author", { authors: post.authors?.map((a) => a.name).join(", ") })}
             </span>
             <span className="meta-divider">❖</span>
-            <time dateTime={post.published_at}>{formatDate(post.published_at)}</time>
+            <time dateTime={post.published_at}>{formatDate(post.published_at, locale)}</time>
             <span className="meta-divider">❖</span>
             <span>{readingTimeText}</span>
           </div>
@@ -92,7 +93,7 @@ function PostView({ post, relatedPosts }: { post: GhostPost; relatedPosts: Ghost
           <div className="post-tags">
             {post.tags && post.tags.length > 0 && (
               <>
-                <span>Gắn thẻ: </span>
+                <span>{pt("tag_label")} </span>
                 {post.tags.map((tag, i) => (
                   <a key={tag.slug} href={tag.url || `/tag/${tag.slug}`}>
                     {tag.name}
@@ -141,28 +142,27 @@ export default async function SlugPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+  const locale = await getLocale();
   let pageHtml: string | null = null;
-  let isTimeline = false;
 
   // Check for special template pages
   if (slug === "lich-su-hinh-thanh") {
-    isTimeline = true;
     try {
       const page = await getPageBySlug(slug);
       pageHtml = page.html;
-    } catch {
-      // Timeline page may not exist in Ghost, render without content
+    } catch (e) {
+      console.error("[SlugPage] Timeline page fetch failed:", e);
     }
-  }
 
-  if (isTimeline) {
+    const pt = await getTranslations("PostPage");
+
     return (
       <div className="post-container">
         <article className="single-post">
           <header className="single-header">
-            <h1 className="single-title">Lịch sử hình thành</h1>
+            <h1 className="single-title">{pt("timeline_title")}</h1>
             <div className="single-meta">
-              <span className="meta-author">Kỷ yếu lịch sử Viện Bảo tồn Di tích</span>
+              <span className="meta-author">{pt("timeline_subtitle")}</span>
             </div>
             <div className="single-header-line" />
           </header>
@@ -186,15 +186,18 @@ export default async function SlugPage({
     const post = await getPostBySlug(slug);
     const relatedPosts = await getRelatedPosts(
       post.primary_tag?.slug || "",
-      post.id
+      post.id,
+      locale
     );
-    return <PostView post={post} relatedPosts={relatedPosts} />;
-  } catch {
+    return <PostView post={post} relatedPosts={relatedPosts} locale={locale} />;
+  } catch (e) {
+    console.error(`[SlugPage] Post fetch failed for "${slug}":`, e);
     // Fall back to page
     try {
       const page = await getPageBySlug(slug);
       return <PageView page={page} />;
-    } catch {
+    } catch (e2) {
+      console.error(`[SlugPage] Page fetch also failed for "${slug}":`, e2);
       notFound();
     }
   }

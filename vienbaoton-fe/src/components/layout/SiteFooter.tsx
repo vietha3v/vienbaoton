@@ -1,14 +1,17 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+import { getTranslations, getLocale } from "next-intl/server";
 import { getTags, getRecentPosts } from "@/lib/ghost";
 
 export default async function SiteFooter() {
+  const t = await getTranslations("Footer");
+  const locale = await getLocale();
   let tags: { name: string; slug: string; count?: { posts: number } }[] = [];
   let recentPosts: { title: string; slug: string }[] = [];
 
   try {
     [tags, recentPosts] = await Promise.all([
       getTags(),
-      getRecentPosts(),
+      getRecentPosts(locale),
     ]);
   } catch {
     // Footer renders fine with empty lists
@@ -20,16 +23,16 @@ export default async function SiteFooter() {
         <div className="footer-columns">
           <div className="footer-col brand-col">
             <h3>Viện Bảo tồn Di tích</h3>
-            <p>Giữ gìn nền móng văn hiến. Kiến tạo giá trị tương lai.</p>
+            <p>{t("tagline")}</p>
             <ul className="contact-list">
-              <li><strong>Địa chỉ:</strong> 489 Nguyễn Trãi, Thanh Xuân, Hà Nội</li>
-              <li><strong>Điện thoại:</strong> (024) 3858 5225</li>
-              <li><strong>Email:</strong> vienbaotonditich@vhttdl.gov.vn</li>
+              <li><strong>{t("address_label")}</strong> {t("address")}</li>
+              <li><strong>{t("phone_label")}</strong> {t("phone")}</li>
+              <li><strong>{t("email_label")}</strong> {t("email")}</li>
             </ul>
           </div>
 
           <div className="footer-col links-col">
-            <h4>Chuyên Mục Chính</h4>
+            <h4>{t("categories_heading")}</h4>
             <ul className="clean-list">
               {tags.length > 0 ? (
                 tags.map((tag) => (
@@ -45,13 +48,13 @@ export default async function SiteFooter() {
                   </li>
                 ))
               ) : (
-                <li><Link href="/">Đang cập nhật...</Link></li>
+                <li><Link href="/">{t("updating")}</Link></li>
               )}
             </ul>
           </div>
 
           <div className="footer-col links-col">
-            <h4>Mới Cập Nhật</h4>
+            <h4>{t("recent_heading")}</h4>
             <ul className="clean-list">
               {recentPosts.length > 0 ? (
                 recentPosts.map((post) => (
@@ -62,18 +65,20 @@ export default async function SiteFooter() {
                   </li>
                 ))
               ) : (
-                <li><Link href="/">Đang bảo tồn văn bản...</Link></li>
+                <li><Link href="/">{t("preserving")}</Link></li>
               )}
             </ul>
           </div>
 
           <div className="footer-col links-col">
-            <h4>Liên Kết & Tra Cứu</h4>
+            <h4>{t("links_heading")}</h4>
             <ul className="clean-list">
-              <li><Link href="/tra-cuu">Tra cứu di tích</Link></li>
-              <li><Link href="/thu-vien-so">Thư viện số</Link></li>
-              <li><Link href="/lien-he">Liên hệ</Link></li>
-              <li><Link href="/faq">Hỏi đáp</Link></li>
+              <li><Link href="/tra-cuu">{t("link_reference")}</Link></li>
+              <li><Link href="/thu-vien-so">{t("link_library")}</Link></li>
+              <li><Link href="/ngan-hang-hinh-anh">Ngân hàng hình ảnh</Link></li>
+              <li><Link href="/tags">Danh mục</Link></li>
+              <li><Link href="/lien-he">{t("link_contact")}</Link></li>
+              <li><Link href="/faq">{t("link_faq")}</Link></li>
             </ul>
           </div>
         </div>

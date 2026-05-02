@@ -3,15 +3,20 @@ import Link from "next/link";
 interface SectionHeaderProps {
   title: string;
   viewAllLink?: string;
+  viewAllText?: string;
 }
 
-export default function SectionHeader({ title, viewAllLink }: SectionHeaderProps) {
+export default function SectionHeader({
+  title,
+  viewAllLink,
+  viewAllText,
+}: SectionHeaderProps) {
   return (
     <div className="section-header">
       <h2>{title}</h2>
       {viewAllLink && (
         <Link href={viewAllLink} className="view-all">
-          Xem tất cả &rarr;
+          {viewAllText} &rarr;
         </Link>
       )}
     </div>

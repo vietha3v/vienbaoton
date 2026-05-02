@@ -1,17 +1,23 @@
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 import SectionHeader from "@/components/shared/SectionHeader";
 
-export default function EventsSection() {
+export default async function EventsSection() {
+  const t = await getTranslations("HomePage");
+
   return (
     <section className="events-section">
-      <SectionHeader title="Hội thảo & Sự kiện" viewAllLink="/tag/su-kien" />
-
+      <SectionHeader
+        title={t("events_title")}
+        viewAllLink="/tag/su-kien"
+        viewAllText={t("view_all")}
+      />
       <div className="events-banner">
         <div className="events-banner-content">
-          <h3>Chuỗi sự kiện bảo tồn Di sản văn hóa phi vật thể 2026</h3>
-          <p>Tham gia cùng các chuyên gia hàng đầu trong và ngoài nước.</p>
+          <h3>{t("events_banner_title")}</h3>
+          <p>{t("events_banner_body")}</p>
           <Link href="/su-kien" className="btn-secondary">
-            Tìm hiểu thêm
+            {t("events_button")}
           </Link>
         </div>
       </div>

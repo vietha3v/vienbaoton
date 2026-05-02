@@ -1,0 +1,210 @@
+{
+  "db": [
+    {
+      "meta": {
+        "exported_on": 1745856000000,
+        "version": "5.0.0"
+      },
+      "data": {
+        "tags": [
+          {
+            "id": "tag_sukien",
+            "name": "Sự kiện",
+            "slug": "su-kien",
+            "description": "Sự kiện, hội thảo về bảo tồn di sản văn hóa",
+            "visibility": "public",
+            "created_at": "2026-04-28T00:00:00.000Z",
+            "updated_at": "2026-04-28T00:00:00.000Z"
+          },
+          {
+            "id": "tag_hoatdong",
+            "name": "Hoạt động Viện",
+            "slug": "hoat-dong-vien",
+            "description": "Tin tức hoạt động của Viện Bảo tồn Di tích",
+            "visibility": "public",
+            "created_at": "2026-04-28T00:00:00.000Z",
+            "updated_at": "2026-04-28T00:00:00.000Z"
+          },
+          {
+            "id": "tag_hoithao",
+            "name": "Hội thảo khoa học",
+            "slug": "hoi-thao-khoa-hoc",
+            "description": "Hội thảo, tọa đàm khoa học về di sản",
+            "visibility": "public",
+            "created_at": "2026-04-28T00:00:00.000Z",
+            "updated_at": "2026-04-28T00:00:00.000Z"
+          },
+          {
+            "id": "tag_duankiengtruc",
+            "name": "Dự án kiến trúc",
+            "slug": "du-an-kien-truc",
+            "description": "Các dự án tu bổ, tôn tạo di tích",
+            "visibility": "public",
+            "created_at": "2026-04-28T00:00:00.000Z",
+            "updated_at": "2026-04-28T00:00:00.000Z"
+          }
+        ],
+        "posts": [
+          {
+            "id": "post_sukien_1",
+            "title": "Chuỗi sự kiện bảo tồn Di sản văn hóa phi vật thể 2026",
+            "slug": "chuoi-su-kien-baoton-di-san-van-hoa-phi-vat-the-2026",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Năm 2026 đánh dấu cột mốc quan trọng trong công tác bảo tồn di sản văn hóa phi vật thể của Việt Nam. Viện Bảo tồn Di tích phối hợp cùng Cục Di sản Văn hóa tổ chức chuỗi sự kiện quy mô quốc gia nhằm quảng bá và phát huy giá trị các di sản văn hóa truyền thống.</p><h3>Mục tiêu sự kiện</h3><p>Chuỗi sự kiện hướng đến việc tôn vinh các giá trị văn hóa phi vật thể đã được UNESCO công nhận, đồng thời tạo diễn đàn giao lưu giữa các nghệ nhân, nhà nghiên cứu và công chúng yêu di sản.</p><h3>Hoạt động nổi bật</h3><ul><li>Triển lãm \"Hồn thiêng di sản\" - Trưng bày hiện vật, hình ảnh về các nghi lễ truyền thống</li><li>Hội thảo khoa học \"Bảo vệ và phát huy giá trị văn hóa phi vật thể trong thời kỳ số hóa\"</li><li>Liên hoan nghệ thuật dân gian với sự tham gia của các làng nghề, đội văn nghệ dân gian</li><li>Workshop trải nghiệm: Nghệ thuật hát Xoan, Ca trù, Chầu văn</li></ul><p>Đây là dịp để cộng đồng hiểu hơn về trách nhiệm bảo vệ di sản, đồng thời kết nối thế hệ trẻ với văn hóa truyền thống dân tộc.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-04-28T08:00:00.000Z",
+            "updated_at": "2026-04-28T08:00:00.000Z",
+            "published_at": "2026-04-28T08:00:00.000Z",
+            "custom_excerpt": "Chuỗi sự kiện quy mô quốc gia về bảo tồn di sản văn hóa phi vật thể với nhiều hoạt động hấp dẫn.",
+            "feature_image": "/content/images/2026/04/z7420612220156_5d5d38d597344f47b395cd82cbe15a97.jpg",
+            "tags": ["tag_sukien", "tag_hoatdong"]
+          },
+          {
+            "id": "post_sukien_2",
+            "title": "Hội thảo khoa học: Giải pháp bảo tồn di tích kiến trúc nghệ thuật thế kỷ 18-19",
+            "slug": "hoi-thao-giai-phap-baoton-di-tich-kien-truc-nghe-thuat",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Viện Bảo tồn Di tích tổ chức hội thảo khoa học với chủ đề \\\"Giải pháp bảo tồn di tích kiến trúc nghệ thuật thế kỷ 18-19\\\" - giai đoạn vàng son của kiến trúc truyền thống Việt Nam.</p><h3>Nội dung chính</h3><p>Các chuyên gia sẽ trình bày tham luận về:</p><ul><li>Đặc điểm kiến trúc đình, chùa, miếu, phủ thời Lê Trung Hưng và Nguyễn sơ</li><li>Kỹ thuật chạm khắc gỗ tinh xảo - di sản nghệ thuật cần được gìn giữ</li><li>Phương pháp tu bổ tôn trọng yếu tố gốc: Kinh nghiệm từ thực tiễn</li><li>Ứng dụng công nghệ 3D scanning trong lưu trữ và phục dựng cấu kiện</li></ul><h3>Đối tượng tham dự</h3><p>Hội thảo dành cho các nhà nghiên cứu, kiến trúc sư, kỹ sư xây dựng chuyên ngành di tích, cùng đại diện các ban quản lý di tích trên toàn quốc.</p><p>Đăng ký tham dự trước ngày 15/05/2026 để nhận tài liệu hội thảo.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-04-28T09:00:00.000Z",
+            "updated_at": "2026-04-28T09:00:00.000Z",
+            "published_at": "2026-04-28T09:00:00.000Z",
+            "custom_excerpt": "Diễn đàn khoa học trao đổi giải pháp bảo tồn các công trình kiến trúc nghệ thuật tiêu biểu thế kỷ 18-19.",
+            "feature_image": "/content/images/2026/04/z6766388140515_742d54ff5b94a2efbd717a9a1dc8a22f.jpg",
+            "tags": ["tag_hoithao", "tag_duankiengtruc"]
+          },
+          {
+            "id": "post_hoatdong_1",
+            "title": "Khánh thành công trình tu bổ Đình Cổ - Di tích Quốc gia đặc biệt",
+            "slug": "khanh-thanh-cong-trinh-tu-bo-dinh-co-di-tich-quoc-gia",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Sáng ngày 20/04/2026, Viện Bảo tồn Di tích phối hợp với UBND tỉnh Bắc Ninh tổ chức lễ khánh thành công trình tu bổ Đình Cổ - di tích kiến trúc nghệ thuật cấp Quốc gia đặc biệt.</p><h3>Quy mô dự án</h3><p>Dự án được phê duyệt từ năm 2024 với tổng mức đầu tư 45 tỷ đồng, thực hiện tu bổ toàn bộ khu vực nghi môn, đại bái và hậu cung. Công trình trải qua hơn 300 năm lịch sử với hệ thống vì kèo gỗ lim, chạm khắc tinh xảo thời Lê.</p><h3>Phương pháp bảo tồn</h3><p>Đội ngũ kỹ sư của Viện đã áp dụng phương pháp \\\"tu bổ tối thiểu\\\" - chỉ thay thế cấu kiện hư hỏng nặng, giữ nguyên tối đa yếu tố gốc. Các mảng chạm khắc được xử lý bằng công nghệ gia cố resin sinh học, đảm bảo độ bền vững theo thời gian.</p><h3>Ý nghĩa văn hóa</h3><p>Đình Cổ không chỉ là nơi thờ Thành hoàng làng mà còn là minh chứng sống động cho nghệ thuật kiến trúc dân gian Bắc Bộ. Việc tu bổ thành công góp phần gìn giữ di sản cho thế hệ tương lai.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-04-28T10:00:00.000Z",
+            "updated_at": "2026-04-28T10:00:00.000Z",
+            "published_at": "2026-04-28T10:00:00.000Z",
+            "custom_excerpt": "Công trình tu bổ Đình Cổ - di tích Quốc gia đặc biệt được khánh thành sau 18 tháng thi công.",
+            "feature_image": "/content/images/2026/04/z6764346579549_7b146f62b12abe4215103cd49f7f6b37.jpg",
+            "tags": ["tag_hoatdong", "tag_duankiengtruc"]
+          },
+          {
+            "id": "post_hoatdong_2",
+            "title": "Khảo sát hiện trạng Quần thể di tích Cố đô Huế: Báo động xuống cấp",
+            "slug": "khao-sat-hien-trang-quan-the-di-tich-co-do-hue",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Đoàn khảo sát của Viện Bảo tồn Di tích vừa hoàn thành đợt kiểm tra hiện trạng các cung điện, lăng tẩm trong Quần thể di tích Cố đô Huế sau ảnh hưởng của bão lũ miền Trung cuối năm 2025.</p><h3>Tình trạng hư hỏng</h3><p>Nhiều hạng mục quan trọng như Điện Thái Hòa, Cung Diên Thọ xuất hiện tình trạng thấm dột, tường vữa bong tróc. Hệ thống thoát nước xuống cấp gây ngập úng kéo dài, ảnh hưởng nền móng công trình.</p><h3>Đề xuất khẩn cấp</h3><p>Viện kiến nghị:</p><ul><li>Khoanh vùng khu vực nguy hiểm, hạn chế khách tham quan</li><li>Thực hiện gia cố mái, chống thấm khẩn cấp trước mùa mưa 2026</li><li>Lập dự án tu bổ tổng thể trình Bộ VHTTDL phê duyệt</li></ul><p>Trung tâm Bảo tồn Di tích Cố đô Huế cam kết phối hợp chặt chẽ với Viện trong công tác cứu hộ di sản.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-04-28T11:00:00.000Z",
+            "updated_at": "2026-04-28T11:00:00.000Z",
+            "published_at": "2026-04-28T11:00:00.000Z",
+            "custom_excerpt": "Báo cáo khảo sát cho thấy nhiều hạng mục trong Quần thể di tích Cố đô Huế đang xuống cấp nghiêm trọng.",
+            "feature_image": "/content/images/2026/04/z6766390524347_164bf5ce9a65eeaf942aec34b439cae7.jpg",
+            "tags": ["tag_hoatdong"]
+          },
+          {
+            "id": "post_sukien_3",
+            "title": "Triển lãm \\\"Di sản kiến trúc Việt Nam - 40 năm nhìn lại\\\"",
+            "slug": "trien-lam-di-san-kien-truc-viet-nam-40-nam-nhin-lai",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Nhân kỷ niệm 40 năm thành lập Viện Bảo tồn Di tích (1982-2026), triển lãm đặc biệt \\\"Di sản kiến trúc Việt Nam - 40 năm nhìn lại\\\" sẽ khai mạc tại Hà Nội.</p><h3>Không gian triển lãm</h3><p>Triển lãm quy tụ hơn 500 hình ảnh, bản vẽ, hiện vật ghi dấu chặng đường Viện tham gia tu bổ các di tích tiêu biểu:</p><ul><li>Khu di tích Trung tâm Hoàng thành Thăng Long</li><li>Quần thể Danh thắng Tràng An</li><li>Phố cổ Hội An - Di sản UNESCO</li><li>Nhà thờ đá Phát Diệm</li><li>Các đình chùa Bắc Bộ tiêu biểu</li></ul><h3>Trải nghiệm công nghệ</h3><p>Khách tham quan sẽ được trải nghiệm mô hình 3D mapping, VR (thực tế ảo) tái hiện kiến trúc di tích trước và sau tu bổ, cùng giao lưu trực tiếp với các kiến trúc sư, nghệ nhân đã tham gia dự án.</p><p>Triển lãm mở cửa miễn phí từ 01/06 - 30/06/2026 tại 489 Nguyễn Trãi, Hà Nội.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-04-28T12:00:00.000Z",
+            "updated_at": "2026-04-28T12:00:00.000Z",
+            "published_at": "2026-04-28T12:00:00.000Z",
+            "custom_excerpt": "Triển lãm kỷ niệm 40 năm Viện Bảo tồn Di tích với 500 tư liệu quý về công tác bảo tồn di sản.",
+            "feature_image": "/content/images/2026/04/z7420612315304_3b1a5efe74acb2f82f1dfc20116e452d.jpg",
+            "tags": ["tag_sukien", "tag_hoatdong"]
+          },
+          {
+            "id": "post_duan_1",
+            "title": "Dự án tu bổ Chùa Keo - Bảo vật quốc gia thời Hậu Lê",
+            "slug": "du-an-tu-bo-chua-keo-bao-vat-quoc-gia",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Chùa Keo (Thái Bình) - một trong những công trình kiến trúc gỗ cổ nhất Việt Nam thời Hậu Lê - đang được Viện Bảo tồn Di tích triển khai tu bổ giai đoạn 2.</p><h3>Giá trị kiến trúc</h3><p>Chùa Keo được xây dựng từ năm 1630, nổi bật với tháp Báo Nghiêm cao 11 tầng và hệ thống gỗ lim không sử dụng đinh. Kiến trúc \\\"nội công ngoại quốc\\\" cùng nghệ thuật chạm khắc rồng phượng đạt đỉnh cao thẩm mỹ thời Lê.</p><h3>Thách thức bảo tồn</h3><p>Sau gần 400 năm, nhiều cấu kiện gỗ bị mối mọt, cong vênh do khí hậu nhiệt đới. Đặc biệt, hệ thống mái ngói mũi hài cần được thay thế đảm bảo kỹ thuật truyền thống.</p><h3>Giải pháp thực hiện</h3><p>Các nghệ nhân làng mộc Cổ Truyền được mời tham gia, kết hợp kỹ thuật truyền thống với gia cố hiện đại. Gỗ lim thay thế được tuyển chọn từ rừng tự nhiên, xử lý bằng phương pháp ngâm nước muối truyền thống.</p><p>Dự kiến hoàn thành vào quý IV/2026, trả lại vẻ đẹp cổ kính cho bảo vật quốc gia.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-04-28T13:00:00.000Z",
+            "updated_at": "2026-04-28T13:00:00.000Z",
+            "published_at": "2026-04-28T13:00:00.000Z",
+            "custom_excerpt": "Tu bổ Chùa Keo - công trình kiến trúc gỗ cổ nhất Việt Nam thời Hậu Lê với kỹ thuật truyền thống.",
+            "feature_image": "/content/images/2026/04/z6764346598671_18dac5d9406c57d8fa260c95115f96dc.jpg",
+            "tags": ["tag_duankiengtruc", "tag_hoatdong"]
+          },
+          {
+            "id": "post_hoithao_1",
+            "title": "Tọa đàm: Đào tạo nguồn nhân lực bảo tồn di sản trong kỷ nguyên số",
+            "slug": "toa-dam-dao-tao-nguon-nhan-luc-baoton-di-san",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Viện Bảo tồn Di tích tổ chức tọa đàm \\\"Đào tạo nguồn nhân lực bảo tồn di sản trong kỷ nguyên số\\\" với sự tham gia của đại diện các trường đại học, viện nghiên cứu trong nước và quốc tế.</p><h3>Bối cảnh</h3><p>Nguồn nhân lực bảo tồn di sản tại Việt Nam đang thiếu hụt nghiêm trọng. Cả nước chỉ có khoảng 200 kỹ sư chuyên ngành, trong khi hàng nghìn di tích cần tu bổ mỗi năm.</p><h3>Giải pháp đề xuất</h3><ul><li>Đưa môn bảo tồn di sản vào chương trình đào tạo kiến trúc, xây dựng</li><li>Hợp tác quốc tế đào tạo thạc sĩ, tiến sĩ chuyên sâu</li><li>Thành lập trung tâm đào tạo nghề bảo tồn tại các làng nghề truyền thống</li><li>Số hóa tài liệu, giáo trình, tạo kho học liệu mở</li></ul><h3>Ký kết hợp tác</h3><p>Tọa đàm sẽ chứng kiến lễ ký kết thỏa thuận hợp tác giữa Viện Bảo tồn Di tích với 5 trường đại học hàng đầu về đào tạo kiến trúc và di sản.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-04-28T14:00:00.000Z",
+            "updated_at": "2026-04-28T14:00:00.000Z",
+            "published_at": "2026-04-28T14:00:00.000Z",
+            "custom_excerpt": "Tọa đàm tìm giải pháp đào tạo nguồn nhân lực bảo tồn di sản - ngành đang thiếu hụt trầm trọng.",
+            "feature_image": "/content/images/2026/04/z6766388432132_c60cb5c5bb6c3273fcd935b36e238288.jpg",
+            "tags": ["tag_hoithao", "tag_hoatdong"]
+          },
+          {
+            "id": "post_hoatdong_3",
+            "title": "Ứng dụng công nghệ Scan 3D lưu trữ di tích: Kết quả bước đầu",
+            "slug": "ung-dung-cong-nghe-scan-3d-luu-tru-di-tich",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Dự án \\\"Số hóa di sản kiến trúc Việt Nam\\\" do Viện Bảo tồn Di tích chủ trì đã hoàn thành giai đoạn 1, quét 3D thành công 50 di tích tiêu biểu trên cả nước.</p><h3>Công nghệ áp dụng</h3><p>Máy quét laser 3D độ phân giải cao ghi nhận chính xác đến từng milimet cấu kiện, tạo \\\"bản sao số\\\" của di tích. Dữ liệu Point Cloud cho phép bóc tách chi tiết độ sâu chạm khắc, kết cấu vì kèo.</p><h3>Lợi ích thiết thực</h3><ul><li>Lưu trữ vĩnh viễn hiện trạng di tích phòng thiên tai, hỏa hoạn</li><li>Hỗ trợ thiết kế tu bổ chính xác, giảm sai sót</li><li>Tạo mô hình VR/AR phục vụ tham quan ảo, giáo dục di sản</li><li>Làm cơ sở pháp lý khi xảy ra tranh chấp, xâm hại di tích</li></ul><h3>Kế hoạch mở rộng</h3><p>Giai đoạn 2 sẽ quét thêm 200 di tích, ưu tiên di tích Quốc gia đặc biệt và di sản UNESCO. Dữ liệu sẽ được công khai trên cổng thông tin điện tử của Viện.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-04-28T15:00:00.000Z",
+            "updated_at": "2026-04-28T15:00:00.000Z",
+            "published_at": "2026-04-28T15:00:00.000Z",
+            "custom_excerpt": "Dự án số hóa di sản hoàn thành giai đoạn 1 với 50 di tích được quét 3D thành công.",
+            "feature_image": "/content/images/2026/04/z6766388585660_3bb6999b008e32ac21cadc05b7c7c0e4.jpg",
+            "tags": ["tag_hoatdong"]
+          },
+          {
+            "id": "post_sukien_4",
+            "title": "Liên hoan Nghệ thuật dân gian các vùng miền 2026",
+            "slug": "lien-hoan-nghe-thuat-dan-gian-cac-vung-mien-2026",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Liên hoan Nghệ thuật dân gian các vùng miền 2026 sẽ diễn ra từ 15-20/08 tại Quảng trường Đông Kinh Nghĩa Thục, Hà Nội.</p><h3>Quy mô sự kiện</h3><p>Liên hoan quy tụ 30 đoàn nghệ thuật từ 3 miền Bắc-Trung-Nam, biểu diễn các loại hình:</p><ul><li>Hát Xoan Phú Thọ - Di sản UNESCO</li><li>Ca trù, Quan họ Bắc Ninh</li><li>Nhã nhạc cung đình Huế</li><li>Đờn ca tài tử Nam Bộ</li><li>Múa rối nước, rối cạn dân gian</li></ul><h3>Hoạt động bên lề</h3><p>Không gian trải nghiệm làng nghề: Gốm Bát Tràng, lụa Vạn Phúc, tranh Đông Hồ. Workshop dạy hát dân ca, làm mặt nạ giấy bồi, nặn tò he.</p><p>Đây là dịp hiếm có để công chúng, đặc biệt là giới trẻ, được đắm mình trong văn hóa dân tộc và hiểu hơn về giá trị cần bảo vệ.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-04-28T16:00:00.000Z",
+            "updated_at": "2026-04-28T16:00:00.000Z",
+            "published_at": "2026-04-28T16:00:00.000Z",
+            "custom_excerpt": "Liên hoan quy tụ 30 đoàn nghệ thuật dân gian từ 3 miền, biểu diễn các di sản UNESCO.",
+            "feature_image": "/content/images/2026/04/z7420612362197_b76e4d4b7c46f86db80f5b64b957b169.jpg",
+            "tags": ["tag_sukien"]
+          },
+          {
+            "id": "post_duan_2",
+            "title": "Khởi công tu bổ Nhà thờ đá Phát Diệm - Kiệt tác kiến trúc Công giáo",
+            "slug": "khoi-cong-tu-bo-nha-tho-da-phat-diem",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Nhà thờ đá Phát Diệm (Ninh Bình) - công trình kiến trúc Công giáo độc đáo kết hợp tinh hoa kiến trúc đình chùa Việt - chính thức khởi động dự án tu bổ toàn diện.</p><h3>Giá trị độc đáo</h3><p>Xây dựng cuối thế kỷ 19 bởi Linh mục Trần Lục, Nhà thờ Phát Diệm là sự hòa quyện giữa kiến trúc Gothic châu Âu và đình làng Bắc Bộ. Toàn bộ công trình bằng đá phiến, gỗ lim, không dùng xi măng.</p><h3>Hạng mục tu bổ</h3><ul><li>Thay thế hệ thống mái ngói bị dột</li><li>Gia cố nền móng, chống lún</li><li>Phục hồi các bức phù điêu đá chạm khắc tinh xảo</li><li>Xử lý gỗ mối mọt bằng công nghệ xông nhiệt</li></ul><h3>Phương châm bảo tồn</h3><p>\\\"Giữ nguyên bản sắc - An toàn kết cấu - Bền vững thời gian\\\". Các thợ đá Ninh Vân - làng nghề truyền thống 500 năm - sẽ thực hiện phần phục hồi đá.</p><p>Dự án hoàn thành vào năm 2027, kịp kỷ niệm 130 năm thành lập Nhà thờ.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-04-28T17:00:00.000Z",
+            "updated_at": "2026-04-28T17:00:00.000Z",
+            "published_at": "2026-04-28T17:00:00.000Z",
+            "custom_excerpt": "Tu bổ Nhà thờ đá Phát Diệm - kiệt tác kiến trúc Công giáo kết hợp tinh hoa đình chùa Việt.",
+            "feature_image": "/content/images/2026/04/z6764346616513_244d29ec56384efeffab2fe63e2f0d52.jpg",
+            "tags": ["tag_duankiengtruc"]
+          }
+        ],
+        "posts_tags": [
+          { "post_id": "post_sukien_1", "tag_id": "tag_sukien", "sort_order": 0 },
+          { "post_id": "post_sukien_1", "tag_id": "tag_hoatdong", "sort_order": 1 },
+          { "post_id": "post_sukien_2", "tag_id": "tag_hoithao", "sort_order": 0 },
+          { "post_id": "post_sukien_2", "tag_id": "tag_duankiengtruc", "sort_order": 1 },
+          { "post_id": "post_hoatdong_1", "tag_id": "tag_hoatdong", "sort_order": 0 },
+          { "post_id": "post_hoatdong_1", "tag_id": "tag_duankiengtruc", "sort_order": 1 },
+          { "post_id": "post_hoatdong_2", "tag_id": "tag_hoatdong", "sort_order": 0 },
+          { "post_id": "post_sukien_3", "tag_id": "tag_sukien", "sort_order": 0 },
+          { "post_id": "post_sukien_3", "tag_id": "tag_hoatdong", "sort_order": 1 },
+          { "post_id": "post_duan_1", "tag_id": "tag_duankiengtruc", "sort_order": 0 },
+          { "post_id": "post_duan_1", "tag_id": "tag_hoatdong", "sort_order": 1 },
+          { "post_id": "post_hoithao_1", "tag_id": "tag_hoithao", "sort_order": 0 },
+          { "post_id": "post_hoithao_1", "tag_id": "tag_hoatdong", "sort_order": 1 },
+          { "post_id": "post_hoatdong_3", "tag_id": "tag_hoatdong", "sort_order": 0 },
+          { "post_id": "post_sukien_4", "tag_id": "tag_sukien", "sort_order": 0 },
+          { "post_id": "post_duan_2", "tag_id": "tag_duankiengtruc", "sort_order": 0 }
+        ]
+      }
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import { getTranslations } from "next-intl/server";
 import type { GhostPost } from "@/lib/ghost";
 import NewsCard from "@/components/shared/NewsCard";
 
@@ -5,13 +6,18 @@ interface RelatedPostsProps {
   posts: GhostPost[];
 }
 
-export default function RelatedPosts({ posts }: RelatedPostsProps) {
+export default async function RelatedPosts({ posts }: RelatedPostsProps) {
+  const t = await getTranslations("PostPage");
+
   return (
     <aside className="related-posts-section">
       <div className="section-header">
-        <h2>Nội dung liên quan</h2>
+        <h2>{t("related_title")}</h2>
       </div>
-      <div className="news-grid" style={{ gridTemplateColumns: "repeat(3, 1fr)" }}>
+      <div
+        className="news-grid"
+        style={{ gridTemplateColumns: "repeat(3, 1fr)" }}
+      >
         {posts.length > 0 ? (
           posts.map((post) => <NewsCard key={post.id} post={post} />)
         ) : (
@@ -24,7 +30,7 @@ export default function RelatedPosts({ posts }: RelatedPostsProps) {
               gridColumn: "span 3",
             }}
           >
-            Các thư tịch liên đới đang trong quá trình bảo tồn...
+            {t("related_empty")}
           </p>
         )}
       </div>

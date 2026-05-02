@@ -1,0 +1,99 @@
+{
+  "pages": [
+    {
+      "id": "album_1",
+      "title": "Hoạt động bảo tồn 2026",
+      "slug": "hoat-dong-baoton-2026",
+      "html": "<img src=\"/content/images/2026/04/z7420612220156_5d5d38d597344f47b395cd82cbe15a97.jpg\" alt=\"Hoạt động bảo tồn 2026\" /><img src=\"/content/images/2026/04/z7420612228393_fe9e3c3b8f8407d44850c1ceb584044e.jpg\" alt=\"Tu bổ di tích\" /><img src=\"/content/images/2026/04/z7420612315304_3b1a5efe74acb2f82f1dfc20116e452d.jpg\" alt=\"Khảo sát hiện trạng\" /><img src=\"/content/images/2026/04/z7420612362197_b76e4d4b7c46f86db80f5b64b957b169.jpg\" alt=\"Phục hồi di sản\" /><img src=\"/content/images/2026/04/z7420612394812_71f5a946c12e24772af77f79a2b7f48c.jpg\" alt=\"Bảo tồn kiến trúc\" /><img src=\"/content/images/2026/04/z7420619326150_d6170ad82311ecd9f631dbcf3d07bae8.jpg\" alt=\"Di tích lịch sử\" /><img src=\"/content/images/2026/04/z6764346579549_7b146f62b12abe4215103cd49f7f6b37.jpg\" alt=\"Đình làng Bắc Bộ\" /><img src=\"/content/images/2026/04/z6764346584980_48456b3da18024180a02ad5eccda44e3.jpg\" alt=\"Chùa cổ\" /><img src=\"/content/images/2026/04/z6764346598671_18dac5d9406c57d8fa260c95115f96dc.jpg\" alt=\"Nhà thờ đá\" /><img src=\"/content/images/2026/04/z6764346616513_244d29ec56384efeffab2fe63e2f0d52.jpg\" alt=\"Tu bổ mái ngói\" /><img src=\"/content/images/2026/04/z6764346641097_013e0348e125f1cd2eb6c5433283ce97.jpg\" alt=\"Phục chế gỗ\" /><img src=\"/content/images/2026/04/z6766388140515_742d54ff5b94a2efbd717a9a1dc8a22f.jpg\" alt=\"Hội thảo chuyên môn\" />",
+      "status": "published",
+      "visibility": "public",
+      "created_at": "2026-04-28T08:00:00.000Z",
+      "updated_at": "2026-04-28T08:00:00.000Z",
+      "published_at": "2026-04-28T08:00:00.000Z",
+      "custom_excerpt": "Hình ảnh các dự án tu bổ, tôn tạo di tích trên toàn quốc năm 2026",
+      "feature_image": "/content/images/2026/04/z7420612220156_5d5d38d597344f47b395cd82cbe15a97.jpg",
+      "tags": ["album"]
+    },
+    {
+      "id": "album_2",
+      "title": "Hội thảo khoa học",
+      "slug": "hoi-thao-khoa-hoc",
+      "html": "<img src=\"/content/images/2026/04/z6766388140515_742d54ff5b94a2efbd717a9a1dc8a22f.jpg\" alt=\"Hội thảo bảo tồn\" /><img src=\"/content/images/2026/04/z6766388432132_c60cb5c5bb6c3273fcd935b36e238288.jpg\" alt=\"Tọa đàm chuyên môn\" /><img src=\"/content/images/2026/04/z6766388585660_3bb6999b008e32ac21cadc05b7c7c0e4.jpg\" alt=\"Báo cáo khoa học\" /><img src=\"/content/images/2026/04/z6766388722619_3b249d5868f8c330291f980c9878d003.jpg\" alt=\"Thảo luận nhóm\" /><img src=\"/content/images/2026/04/z6766388944611_c48415ac5cd998e9ec122767ec4e35aa.jpg\" alt=\"Trình bày đề tài\" /><img src=\"/content/images/2026/04/z6766389652993_8cd3fc116346ea34112e57cbe72f1ca6.jpg\" alt=\"Nghiên cứu di sản\" /><img src=\"/content/images/2026/04/z6766390298013_dc48a553f7dfd1f9aad671e5b5727370.jpg\" alt=\"Khảo sát thực địa\" /><img src=\"/content/images/2026/04/z6766390524347_164bf5ce9a65eeaf942aec34b439cae7.jpg\" alt=\"Tổng kết hội nghị\" />",
+      "status": "published",
+      "visibility": "public",
+      "created_at": "2026-04-20T09:00:00.000Z",
+      "updated_at": "2026-04-20T09:00:00.000Z",
+      "published_at": "2026-04-20T09:00:00.000Z",
+      "custom_excerpt": "Các hội thảo, tọa đàm khoa học về bảo tồn di sản văn hóa",
+      "feature_image": "/content/images/2026/04/z6766388140515_742d54ff5b94a2efbd717a9a1dc8a22f.jpg",
+      "tags": ["album"]
+    },
+    {
+      "id": "album_3",
+      "title": "Di tích miền Bắc",
+      "slug": "di-tich-mien-bac",
+      "html": "<img src=\"/content/images/2026/04/z6764346579549_7b146f62b12abe4215103cd49f7f6b37.jpg\" alt=\"Đình làng\" /><img src=\"/content/images/2026/04/z6764346584980_48456b3da18024180a02ad5eccda44e3.jpg\" alt=\"Chùa Bắc Bộ\" /><img src=\"/content/images/2026/04/z6764346598671_18dac5d9406c57d8fa260c95115f96dc.jpg\" alt=\"Đền thờ\" /><img src=\"/content/images/2026/04/z6764346616513_244d29ec56384efeffab2fe63e2f0d52.jpg\" alt=\"Nhà cổ\" /><img src=\"/content/images/2026/04/z6766388140515_742d54ff5b94a2efbd717a9a1dc8a22f.jpg\" alt=\"Di tích lịch sử\" /><img src=\"/content/images/2026/04/z6766388432132_c60cb5c5bb6c3273fcd935b36e238288.jpg\" alt=\"Kiến trúc cổ\" />",
+      "status": "published",
+      "visibility": "public",
+      "created_at": "2026-04-15T10:00:00.000Z",
+      "updated_at": "2026-04-15T10:00:00.000Z",
+      "published_at": "2026-04-15T10:00:00.000Z",
+      "custom_excerpt": "Hình ảnh các di tích kiến trúc nghệ thuật Bắc Bộ",
+      "feature_image": "/content/images/2026/04/z6764346579549_7b146f62b12abe4215103cd49f7f6b37.jpg",
+      "tags": ["album"]
+    },
+    {
+      "id": "album_4",
+      "title": "Di tích miền Trung",
+      "slug": "di-tich-mien-trung",
+      "html": "<img src=\"/content/images/2026/04/z6766390524347_164bf5ce9a65eeaf942aec34b439cae7.jpg\" alt=\"Cố đô Huế\" /><img src=\"/content/images/2026/04/z6766390657992_b47d09618dd1cb5f2e9d430e96ffd6dd.jpg\" alt=\"Cung điện Huế\" /><img src=\"/content/images/2026/04/z6766391016089_ceeb3a6617d070336c6a8341e7f679ef.jpg\" alt=\"Lăng tẩm\" /><img src=\"/content/images/2026/04/z6766391273927_0bbc378cb00df3de406c1cc5f42aadc2.jpg\" alt=\"Phố cổ Hội An\" /><img src=\"/content/images/2026/04/z6766391530202_7f9d169267f8f6c2fc78506cb78f9174.jpg\" alt=\"Mỹ Sơn\" /><img src=\"/content/images/2026/04/z6766393294145_3e0797e451239817c8c001a97ef8fb7b.jpg\" alt=\"Di sản UNESCO\" />",
+      "status": "published",
+      "visibility": "public",
+      "created_at": "2026-04-10T11:00:00.000Z",
+      "updated_at": "2026-04-10T11:00:00.000Z",
+      "published_at": "2026-04-10T11:00:00.000Z",
+      "custom_excerpt": "Quần thể di tích Cố đô Huế, Phố cổ Hội An, Thánh địa Mỹ Sơn",
+      "feature_image": "/content/images/2026/04/z6766390524347_164bf5ce9a65eeaf942aec34b439cae7.jpg",
+      "tags": ["album"]
+    },
+    {
+      "id": "album_5",
+      "title": "Di tích miền Nam",
+      "slug": "di-tich-mien-nam",
+      "html": "<img src=\"/content/images/2026/04/z7420612220156_5d5d38d597344f47b395cd82cbe15a97.jpg\" alt=\"Di tích Nam Bộ\" /><img src=\"/content/images/2026/04/z7420612228393_fe9e3c3b8f8407d44850c1ceb584044e.jpg\" alt=\"Nhà cổ miền Nam\" /><img src=\"/content/images/2026/04/z7420612315304_3b1a5efe74acb2f82f1dfc20116e452d.jpg\" alt=\"Chùa Nam Bộ\" /><img src=\"/content/images/2026/04/z7420612362197_b76e4d4b7c46f86db80f5b64b957b169.jpg\" alt=\"Di tích lịch sử miền Nam\" /><img src=\"/content/images/2026/04/z7420612394812_71f5a946c12e24772af77f79a2b7f48c.jpg\" alt=\"Văn hóa Óc Eo\" />",
+      "status": "published",
+      "visibility": "public",
+      "created_at": "2026-04-05T12:00:00.000Z",
+      "updated_at": "2026-04-05T12:00:00.000Z",
+      "published_at": "2026-04-05T12:00:00.000Z",
+      "custom_excerpt": "Các di tích lịch sử văn hóa Nam Bộ",
+      "feature_image": "/content/images/2026/04/z7420612220156_5d5d38d597344f47b395cd82cbe15a97.jpg",
+      "tags": ["album"]
+    },
+    {
+      "id": "album_6",
+      "title": "Nghệ thuật dân gian",
+      "slug": "nghe-thuat-dan-gian",
+      "html": "<img src=\"/content/images/2026/04/z7609770778078_23f084564f03a1504b7e56036e627459.jpg\" alt=\"Hát Xoan\" /><img src=\"/content/images/2026/04/z7609770804168_c75d35a3d47fd6d1cc4cdffca15f7263.jpg\" alt=\"Ca trù\" /><img src=\"/content/images/2026/04/z7609770835178_7b4fc60cf855ff63bff6684fc007ddc7.jpg\" alt=\"Quan họ\" /><img src=\"/content/images/2026/04/z7609770863586_f7f08d20f683ff45f74a947f3839578c.jpg\" alt=\"Chầu văn\" /><img src=\"/content/images/2026/04/z7609770923077_9a5bde84c6e11ed507c4781c4e2a7752.jpg\" alt=\"Múa rối nước\" /><img src=\"/content/images/2026/04/z7609770946357_1d76206854c6ef729f5fa1cd8b77f0b2.jpg\" alt=\"Nghệ thuật dân gian\" />",
+      "status": "published",
+      "visibility": "public",
+      "created_at": "2026-03-28T13:00:00.000Z",
+      "updated_at": "2026-03-28T13:00:00.000Z",
+      "published_at": "2026-03-28T13:00:00.000Z",
+      "custom_excerpt": "Các loại hình nghệ thuật truyền thống, di sản văn hóa phi vật thể",
+      "feature_image": "/content/images/2026/04/z7609770778078_23f084564f03a1504b7e56036e627459.jpg",
+      "tags": ["album"]
+    }
+  ],
+  "tags": [
+    {
+      "id": "tag_album",
+      "name": "album",
+      "slug": "album",
+      "description": "Tag đánh dấu các page là album ảnh",
+      "visibility": "internal",
+      "created_at": "2026-04-28T00:00:00.000Z",
+      "updated_at": "2026-04-28T00:00:00.000Z"
+    }
+  ]
+}
