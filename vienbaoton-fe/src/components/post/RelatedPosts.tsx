@@ -14,21 +14,11 @@ export default async function RelatedPosts({ posts }: RelatedPostsProps) {
       <div className="section-header">
         <h2>{t("related_title")}</h2>
       </div>
-      <div
-        className="news-grid"
-        style={{ gridTemplateColumns: "repeat(3, 1fr)" }}
-      >
+      <div className="news-grid grid-cols-3">
         {posts.length > 0 ? (
           posts.map((post) => <NewsCard key={post.id} post={post} />)
         ) : (
-          <p
-            style={{
-              textAlign: "center",
-              color: "var(--text-muted)",
-              fontStyle: "italic",
-              width: "100%",
-              gridColumn: "span 3",
-            }}
+          <p className="text-center text-[var(--text-muted)] italic w-full col-span-3"
           >
             {t("related_empty")}
           </p>

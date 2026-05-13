@@ -6,11 +6,10 @@ export default function Loading() {
   const t = useTranslations("Loading");
 
   return (
-    <div
-      className="home-container"
-      style={{ textAlign: "center", padding: "6rem 2rem" }}
+    <div className="home-container text-center px-8 py-24"
     >
-      <div style={{ color: "var(--text-muted)", fontStyle: "italic" }}>
+      <div className="text-[var(--text-muted)] italic"
+      >
         {t("message")}
       </div>
     </div>

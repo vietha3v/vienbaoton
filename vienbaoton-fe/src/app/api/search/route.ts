@@ -44,14 +44,21 @@ interface SearchResult {
   feature_image: string | null;
   published_at: string;
   url: string;
-  score?: number;
+  score: number;
 }
 
-// Elastic-style scoring function
+function escapeFilterValue(value: string): string {
+  return value.replace(/'/g, "\\'");
+}
+
+function stripHtml(html: string): string {
+  return html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+}
+
 function calculateScore(content: string, query: string): number {
   const lowerContent = content.toLowerCase();
   const lowerQuery = query.toLowerCase();
-  const words = lowerQuery.split(/\s+/).filter(w => w.length > 2);
+  const words = lowerQuery.split(/\s+/).filter((w) => w.length > 2);
 
   let score = 0;
 
@@ -61,14 +68,12 @@ function calculateScore(content: string, query: string): number {
   }
 
   // Word-by-word matching
-  words.forEach(word => {
+  words.forEach((word) => {
     const regex = new RegExp(word, "gi");
     const matches = lowerContent.match(regex);
     if (matches) {
       score += matches.length * 10;
     }
-
-    // Partial match bonus
     if (lowerContent.includes(word)) {
       score += 5;
     }
@@ -83,8 +88,36 @@ function calculateScore(content: string, query: string): number {
   return score;
 }
 
-function stripHtml(html: string): string {
-  return html.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+function buildResult(
+  item: GhostPost | GhostPage,
+  type: "post" | "page",
+  query: string,
+  fromTitle: boolean
+): SearchResult | null {
+  const isAlbum = type === "page" && item.tags?.some((t) => t.slug === "album");
+  const actualType = isAlbum ? "album" : type;
+
+  const searchableContent = `${item.title} ${item.excerpt || ""} ${stripHtml(
+    item.html || ""
+  )}`;
+  let score = calculateScore(searchableContent, query);
+  if (fromTitle) score += 30;
+  if (score <= 0) return null;
+
+  return {
+    type: actualType,
+    id: item.id,
+    slug: item.slug,
+    title: item.title,
+    excerpt: item.excerpt || stripHtml(item.html || "").substring(0, 200),
+    feature_image: item.feature_image,
+    published_at: item.published_at,
+    url:
+      actualType === "album"
+        ? `/ngan-hang-hinh-anh/${item.slug}`
+        : `/${item.slug}`,
+    score,
+  };
 }
 
 export async function GET(request: NextRequest) {
@@ -96,89 +129,79 @@ export async function GET(request: NextRequest) {
   }
 
   const searchQuery = query.trim();
+  const safeQuery = escapeFilterValue(searchQuery);
+  const titleFilter = `title:~*'${safeQuery}'`;
 
   try {
-    // Search in posts - search title and html content
-    const postsPromise = api.posts.browse({
-      limit: "all",
+    // Phase 1: Title search via Ghost filter (fast, server-side, max 50 each)
+    const titlePostsPromise = api.posts.browse({
+      limit: 50,
+      include: ["tags"],
+      filter: titleFilter,
+      order: "published_at DESC",
+    });
+    const titlePagesPromise = api.pages.browse({
+      limit: 50,
+      include: ["tags"],
+      filter: titleFilter,
+      order: "published_at DESC",
+    });
+
+    // Phase 2: Content search (recent 50 items, client-side filter)
+    const contentPostsPromise = api.posts.browse({
+      limit: 50,
+      include: ["tags"],
+      order: "published_at DESC",
+    });
+    const contentPagesPromise = api.pages.browse({
+      limit: 50,
       include: ["tags"],
       order: "published_at DESC",
     });
 
-    // Search in pages
-    const pagesPromise = api.pages.browse({
-      limit: "all",
-      include: ["tags"],
-      order: "published_at DESC",
-    });
+    const [titlePosts, titlePages, contentPosts, contentPages] =
+      await Promise.all([
+        titlePostsPromise,
+        titlePagesPromise,
+        contentPostsPromise,
+        contentPagesPromise,
+      ]);
 
-    const [posts, pages] = await Promise.all([postsPromise, pagesPromise]);
-
+    const seenIds = new Set<string>();
     const results: SearchResult[] = [];
 
-    // Filter and score posts
-    (posts as unknown as GhostPost[]).forEach((post) => {
-      const searchableContent = `${post.title} ${post.excerpt} ${stripHtml(post.html || "")}`;
+    // Helper to add unique results
+    const add = (item: SearchResult | null) => {
+      if (!item || seenIds.has(item.id)) return;
+      seenIds.add(item.id);
+      results.push(item);
+    };
 
-      // Check if query matches
-      const lowerContent = searchableContent.toLowerCase();
-      const lowerQuery = searchQuery.toLowerCase();
-      const words = lowerQuery.split(/\s+/).filter(w => w.length > 2);
+    // Title matches first (boosted score)
+    (titlePosts as unknown as GhostPost[]).forEach((post) =>
+      add(buildResult(post, "post", searchQuery, true))
+    );
+    (titlePages as unknown as GhostPage[]).forEach((page) =>
+      add(buildResult(page, "page", searchQuery, true))
+    );
 
-      const matches = words.some(word => lowerContent.includes(word));
-
-      if (matches) {
-        const score = calculateScore(searchableContent, searchQuery);
-        if (score > 0) {
-          results.push({
-            type: "post",
-            id: post.id,
-            slug: post.slug,
-            title: post.title,
-            excerpt: post.excerpt || stripHtml(post.html || "").substring(0, 200),
-            feature_image: post.feature_image,
-            published_at: post.published_at,
-            url: `/${post.slug}`,
-            score,
-          });
-        }
-      }
-    });
-
-    // Filter and score pages
-    (pages as unknown as GhostPage[]).forEach((page) => {
-      const searchableContent = `${page.title} ${page.excerpt || ""} ${stripHtml(page.html || "")}`;
-      const lowerContent = searchableContent.toLowerCase();
-      const lowerQuery = searchQuery.toLowerCase();
-      const words = lowerQuery.split(/\s+/).filter(w => w.length > 2);
-
-      const matches = words.some(word => lowerContent.includes(word));
-      const isAlbum = page.tags?.some((tag) => tag.slug === "album");
-
-      if (matches) {
-        const score = calculateScore(searchableContent, searchQuery);
-        if (score > 0) {
-          results.push({
-            type: isAlbum ? "album" : "page",
-            id: page.id,
-            slug: page.slug,
-            title: page.title,
-            excerpt: page.excerpt || stripHtml(page.html || "").substring(0, 200),
-            feature_image: page.feature_image,
-            published_at: page.published_at,
-            url: isAlbum ? `/ngan-hang-hinh-anh/${page.slug}` : `/${page.slug}`,
-            score,
-          });
-        }
-      }
-    });
+    // Content matches (only if not already added)
+    (contentPosts as unknown as GhostPost[]).forEach((post) =>
+      add(buildResult(post, "post", searchQuery, false))
+    );
+    (contentPages as unknown as GhostPage[]).forEach((page) =>
+      add(buildResult(page, "page", searchQuery, false))
+    );
 
     // Sort by score (relevance) then by date
     results.sort((a, b) => {
       if (b.score !== a.score) {
-        return (b.score || 0) - (a.score || 0);
+        return b.score - a.score;
       }
-      return new Date(b.published_at).getTime() - new Date(a.published_at).getTime();
+      return (
+        new Date(b.published_at).getTime() -
+        new Date(a.published_at).getTime()
+      );
     });
 
     return NextResponse.json({

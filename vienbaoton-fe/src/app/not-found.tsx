@@ -7,21 +7,16 @@ export default function NotFound() {
   const t = useTranslations("NotFound");
 
   return (
-    <div
-      className="home-container"
-      style={{ textAlign: "center", padding: "6rem 2rem" }}
+    <div className="home-container text-center px-8 py-24"
     >
-      <h1
-        style={{
-          fontSize: "4rem",
-          color: "var(--accent-color)",
-          marginBottom: "1rem",
-        }}
+      <h1 className="text-[4rem] text-[var(--accent-color)] mb-4"
       >
         {t("title")}
       </h1>
-      <h2 style={{ marginBottom: "1.5rem" }}>{t("heading")}</h2>
-      <p style={{ color: "var(--text-muted)", marginBottom: "2rem" }}>
+      <h2 className="mb-6"
+      >{t("heading")}</h2>
+      <p className="text-[var(--text-muted)] mb-8"
+      >
         {t("message")}
       </p>
       <Link href="/" className="btn-primary">

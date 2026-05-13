@@ -8,11 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.2.4",
     "@tryghost/content-api": "^1.12.6",
     "next": "16.2.4",
     "next-intl": "^4.9.1",
+    "postcss": "^8.5.13",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "tailwindcss": "^4.2.4"
   },
   "devDependencies": {
     "@types/node": "^20",

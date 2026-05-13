@@ -18,7 +18,7 @@ export default function InstantSearch({ initialQuery = "", initialResults = [] }
   const [results, setResults] = useState<SearchResult[]>(initialResults);
   const [isLoading, setIsLoading] = useState(false);
   const [hasSearched, setHasSearched] = useState(!!initialQuery);
-  const debounceRef = useRef<NodeJS.Timeout>();
+  const debounceRef = useRef<NodeJS.Timeout | undefined>(undefined);
   const inputRef = useRef<HTMLInputElement>(null);
 
   const searchApi = useCallback(async (searchQuery: string) => {

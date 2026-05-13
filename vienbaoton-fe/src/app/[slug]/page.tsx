@@ -169,8 +169,7 @@ export default async function SlugPage({
 
           {pageHtml && (
             <section
-              className="single-content gh-content"
-              style={{ marginBottom: "4rem" }}
+              className="single-content gh-content mb-16"
               dangerouslySetInnerHTML={{ __html: pageHtml }}
             />
           )}

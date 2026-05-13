@@ -1,0 +1,29 @@
+{
+  "name": "vienbaoton-cms",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0",
+    "@tailwindcss/postcss": "^4.2.4",
+    "@tryghost/content-api": "^1.12.6",
+    "jsonwebtoken": "^9.0.2",
+    "next": "16.2.4",
+    "postcss": "^8.5.13",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "tailwindcss": "^4.2.4"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/tryghost__content-api": "^1.3.17",
+    "typescript": "^5"
+  }
+}

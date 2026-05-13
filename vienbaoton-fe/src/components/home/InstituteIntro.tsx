@@ -12,8 +12,7 @@ export default async function InstituteIntro() {
           <p>{t("intro_body")}</p>
           <Link
             href="/gioi-thieu"
-            className="btn-primary"
-            style={{ marginTop: "1rem", display: "inline-block" }}
+            className="btn-primary inline-block mt-4"
           >
             {t("intro_button")}
           </Link>

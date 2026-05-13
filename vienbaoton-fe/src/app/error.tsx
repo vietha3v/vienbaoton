@@ -12,26 +12,19 @@ export default function Error({
   const t = useTranslations("Error");
 
   return (
-    <div
-      className="home-container"
-      style={{ textAlign: "center", padding: "6rem 2rem" }}
+    <div className="home-container text-center px-8 py-24"
     >
-      <h1
-        style={{
-          fontSize: "2rem",
-          color: "var(--accent-color)",
-          marginBottom: "1rem",
-        }}
+      <h1 className="text-[2rem] text-[var(--accent-color)] mb-4"
       >
         {t("title")}
       </h1>
-      <p style={{ color: "var(--text-muted)", marginBottom: "2rem" }}>
+      <p className="text-[var(--text-muted)] mb-8"
+      >
         {t("message")}
       </p>
       <button
         onClick={reset}
-        className="btn-primary"
-        style={{ border: "none", cursor: "pointer" }}
+        className="btn-primary border-none cursor-pointer"
       >
         {t("retry")}
       </button>

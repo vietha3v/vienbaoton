@@ -40,7 +40,7 @@ export default async function SiteFooter() {
                     <Link href={`/tag/${tag.slug}`}>
                       {tag.name}{" "}
                       {tag.count && (
-                        <span style={{ opacity: 0.6, fontSize: "0.8rem" }}>
+                        <span className="text-[0.8rem] opacity-60">
                           ({tag.count.posts})
                         </span>
                       )}
