@@ -2,28 +2,163 @@
   "db": [
     {
       "meta": {
-        "exported_on": 1729012345000,
+        "exported_on": 1747200000000,
         "version": "5.0.0"
       },
       "data": {
         "tags": [
           {
-            "id": "tag_tintuc",
+            "id": "tag_tin-tuc",
             "name": "Tin tức",
             "slug": "tin-tuc",
-            "description": "Tin tức hoạt động chuyên ngành bảo tồn",
+            "description": "Tin tức sự kiện chung",
             "visibility": "public",
             "created_at": "2026-03-31T09:00:00.000Z",
             "updated_at": "2026-03-31T09:00:00.000Z"
           },
           {
-            "id": "tag_nghiencuu",
+            "id": "tag_nghien-cuu",
             "name": "Nghiên cứu",
             "slug": "nghien-cuu",
             "description": "Nghiên cứu khoa học và bảo tồn",
             "visibility": "public",
             "created_at": "2026-03-31T09:00:00.000Z",
             "updated_at": "2026-03-31T09:00:00.000Z"
+          },
+          {
+            "id": "tag_tin-hoat-dong-vien",
+            "name": "Tin hoạt động Viện",
+            "slug": "tin-hoat-dong-vien",
+            "description": "Hoạt động nội bộ của Viện Bảo tồn di tích",
+            "visibility": "public",
+            "created_at": "2026-05-14T00:00:00.000Z",
+            "updated_at": "2026-05-14T00:00:00.000Z"
+          },
+          {
+            "id": "tag_tin-chi-dao-bo",
+            "name": "Tin chỉ đạo Bộ",
+            "slug": "tin-chi-dao-bo",
+            "description": "Chỉ đạo từ Bộ Văn hóa, Thể thao và Du lịch và Chính phủ",
+            "visibility": "public",
+            "created_at": "2026-05-14T00:00:00.000Z",
+            "updated_at": "2026-05-14T00:00:00.000Z"
+          },
+          {
+            "id": "tag_hoi-thao-khoa-hoc",
+            "name": "Hội thảo khoa học",
+            "slug": "hoi-thao-khoa-hoc",
+            "description": "Hội thảo, tọa đàm khoa học chuyên ngành bảo tồn",
+            "visibility": "public",
+            "created_at": "2026-05-14T00:00:00.000Z",
+            "updated_at": "2026-05-14T00:00:00.000Z"
+          },
+          {
+            "id": "tag_thong-bao",
+            "name": "Thông báo",
+            "slug": "thong-bao",
+            "description": "Thông báo chính thức từ Viện",
+            "visibility": "public",
+            "created_at": "2026-05-14T00:00:00.000Z",
+            "updated_at": "2026-05-14T00:00:00.000Z"
+          },
+          {
+            "id": "tag_bao-chi",
+            "name": "Báo chí viết về Viện",
+            "slug": "bao-chi-viet-ve-vien",
+            "description": "Bài báo, phóng sự về Viện Bảo tồn di tích",
+            "visibility": "public",
+            "created_at": "2026-05-14T00:00:00.000Z",
+            "updated_at": "2026-05-14T00:00:00.000Z"
+          },
+          {
+            "id": "tag_de-tai-cap-nha-nuoc",
+            "name": "Đề tài cấp Nhà nước",
+            "slug": "de-tai-cap-nha-nuoc",
+            "description": "Đề tài nghiên cứu khoa học cấp quốc gia",
+            "visibility": "public",
+            "created_at": "2026-05-14T00:00:00.000Z",
+            "updated_at": "2026-05-14T00:00:00.000Z"
+          },
+          {
+            "id": "tag_de-tai-cap-bo",
+            "name": "Đề tài cấp Bộ",
+            "slug": "de-tai-cap-bo",
+            "description": "Đề tài nghiên cứu khoa học cấp Bộ",
+            "visibility": "public",
+            "created_at": "2026-05-14T00:00:00.000Z",
+            "updated_at": "2026-05-14T00:00:00.000Z"
+          },
+          {
+            "id": "tag_nhiem-vu-thuong-xuyen",
+            "name": "Nhiệm vụ thường xuyên",
+            "slug": "nhiem-vu-thuong-xuyen",
+            "description": "Nhiệm vụ thường xuyên theo chức năng",
+            "visibility": "public",
+            "created_at": "2026-05-14T00:00:00.000Z",
+            "updated_at": "2026-05-14T00:00:00.000Z"
+          },
+          {
+            "id": "tag_hop-tac-quoc-te",
+            "name": "Hợp tác quốc tế",
+            "slug": "hop-tac-quoc-te",
+            "description": "Dự án và hoạt động hợp tác quốc tế",
+            "visibility": "public",
+            "created_at": "2026-05-14T00:00:00.000Z",
+            "updated_at": "2026-05-14T00:00:00.000Z"
+          },
+          {
+            "id": "tag_ho-so-unesco",
+            "name": "Hồ sơ UNESCO",
+            "slug": "ho-so-unesco",
+            "description": "Hồ sơ đề cử Di sản thế giới UNESCO",
+            "visibility": "public",
+            "created_at": "2026-05-14T00:00:00.000Z",
+            "updated_at": "2026-05-14T00:00:00.000Z"
+          },
+          {
+            "id": "tag_an-pham-khoa-hoc",
+            "name": "Ấn phẩm khoa học",
+            "slug": "an-pham-khoa-hoc",
+            "description": "Sách, tạp chí, báo cáo khoa học",
+            "visibility": "public",
+            "created_at": "2026-05-14T00:00:00.000Z",
+            "updated_at": "2026-05-14T00:00:00.000Z"
+          },
+          {
+            "id": "tag_khao-sat-danh-gia",
+            "name": "Khảo sát đánh giá",
+            "slug": "khao-sat-danh-gia",
+            "description": "Khảo sát thực địa, đánh giá hiện trạng di tích",
+            "visibility": "public",
+            "created_at": "2026-05-14T00:00:00.000Z",
+            "updated_at": "2026-05-14T00:00:00.000Z"
+          },
+          {
+            "id": "tag_tu-bo-phuc-hoi",
+            "name": "Tu bổ phục hồi",
+            "slug": "tu-bo-phuc-hoi",
+            "description": "Dự án tu bổ, phục hồi di tích",
+            "visibility": "public",
+            "created_at": "2026-05-14T00:00:00.000Z",
+            "updated_at": "2026-05-14T00:00:00.000Z"
+          },
+          {
+            "id": "tag_dao-tao-boi-duong",
+            "name": "Đào tạo bồi dưỡng",
+            "slug": "dao-tao-boi-duong",
+            "description": "Chương trình đào tạo, bồi dưỡng nghiệp vụ bảo tồn",
+            "visibility": "public",
+            "created_at": "2026-05-14T00:00:00.000Z",
+            "updated_at": "2026-05-14T00:00:00.000Z"
+          },
+          {
+            "id": "tag_gioi-thieu",
+            "name": "Giới thiệu",
+            "slug": "gioi-thieu",
+            "description": "Thông tin giới thiệu về Viện Bảo tồn di tích",
+            "visibility": "public",
+            "created_at": "2026-05-14T00:00:00.000Z",
+            "updated_at": "2026-05-14T00:00:00.000Z"
           }
         ],
         "posts": [
@@ -31,7 +166,7 @@
             "id": "post_1",
             "title": "Khởi công dự án tu bổ, tôn tạo quần thể kiến trúc Đình làng Bắc Bộ",
             "slug": "khoi-cong-du-an-tu-bo-dinh-lang-bac-bo",
-            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Trải qua hơn 300 năm lịch sử, quần thể Đình làng với nghệ thuật chạm khắc gỗ tinh xảo đang đứng trước nguy cơ xuống cấp nghiêm trọng do tác động của khí hậu nhiệt đới gió mùa ẩm.</p><p>Hôm nay, Viện Bảo tồn Di tích phối hợp cùng Cục Di sản Văn hóa chính thức khởi động dự án trùng tu với quy mô lớn. Tôn chỉ của dự án là “bảo tồn tối đa yếu tố gốc, giữ gìn hồn cốt của di tích”. Các chuyên gia sẽ tiến hành thay thế các cấu kiện gỗ mọt ruỗng bằng kỹ thuật ghép mộng mộc truyền thống, sử dụng gỗ lim xanh nguyên khối và hoàn thiện bề mặt bằng sơn ta (sơn then, sơn cánh gián) thay vì hóa chất hiện đại. Dự kiến công trình sẽ hoàn thành vào cuối năm 2026, trả lại vẻ đẹp uy nghiêm vốn có cho chốn linh thiêng của làng quê Bắc Bộ.</p>\"}]],\"sections\":[[10,0]]}",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Trải qua hơn 300 năm lịch sử, quần thể Đình làng với nghệ thuật chạm khắc gỗ tinh xảo đang đứng trước nguy cơ xuống cấp nghiêm trọng do tác động của khí hậu nhiệt đới gió mùa ẩm.</p><p>Hôm nay, Viện Bảo tồn Di tích phối hợp cùng Cục Di sản Văn hóa chính thức khởi động dự án trùng tu với quy mô lớn. Tôn chỉ của dự án là \"bảo tồn tối đa yếu tố gốc, giữ gìn hồn cốt của di tích\". Các chuyên gia sẽ tiến hành thay thế các cấu kiện gỗ mọt ruỗng bằng kỹ thuật ghép mộng mộc truyền thống, sử dụng gỗ lim xanh nguyên khối và hoàn thiện bề mặt bằng sơn ta (sơn then, sơn cánh gián) thay vì hóa chất hiện đại. Dự kiến công trình sẽ hoàn thành vào cuối năm 2026, trả lại vẻ đẹp uy nghiêm vốn có cho chốn linh thiêng của làng quê Bắc Bộ.</p>\"}]],\"sections\":[[10,0]]}",
             "status": "published",
             "visibility": "public",
             "created_at": "2026-03-31T09:05:00.000Z",
@@ -91,14 +226,131 @@
             "published_at": "2026-03-31T09:01:00.000Z",
             "custom_excerpt": "Triển lãm đánh thức kho tàng di sản cung đình...",
             "feature_image": "https://images.unsplash.com/photo-1582299860647-75b8e976db57"
+          },
+          {
+            "id": "post_6",
+            "title": "Viện Bảo tồn di tích làm việc tại Đà Nẵng về hồ sơ quy hoạch bảo quản, tu bổ, phục hồi di tích quốc gia đặc biệt",
+            "slug": "vien-bao-ton-di-tich-lam-viec-tai-da-nang-ho-so-quy-hoach-bao-quan-tu-bo-phuc-hoi",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Từ ngày 08 đến ngày 10/5/2026, đoàn công tác của Viện Bảo tồn di tích do ông Đặng Khánh Ngọc – Viện trưởng làm trưởng đoàn đã có chương trình làm việc tại Sở Văn hóa, Thể thao và Du lịch thành phố Đà Nẵng về công tác quy hoạch bảo quản, tu bổ, phục hồi một số di tích kiến trúc Champa tiêu biểu tại Đà Nẵng, gồm Di tích khảo cổ và kiến trúc nghệ thuật quốc gia đặc biệt Phật viện Đồng Dương, Khu đền tháp Mỹ Sơn và tháp Sáng.</p><p>Trong khuôn khổ chương trình công tác, đoàn đã tiến hành khảo sát thực địa tại di tích quốc gia đặc biệt Phật viện Đồng Dương, ghi nhận hiện trạng, trao đổi về cơ sở xác định ranh giới bảo vệ di tích, tiếp cận các kết quả nghiên cứu khảo cổ học liên quan và bổ sung tư liệu phục vụ quá trình lập quy hoạch bảo quản, tu bổ, phục hồi di tích.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-05-10T09:00:00.000Z",
+            "updated_at": "2026-05-10T09:00:00.000Z",
+            "published_at": "2026-05-10T09:00:00.000Z",
+            "custom_excerpt": "Đoàn công tác do Viện trưởng Đặng Khánh Ngọc dẫn đầu làm việc tại Đà Nẵng về quy hoạch tu bổ di tích Champa...",
+            "feature_image": "https://images.unsplash.com/photo-1599707845119-6c7a9a9a8a7e"
+          },
+          {
+            "id": "post_7",
+            "title": "Khảo sát hệ thống di tích Angkor Borei (Campuchia) phục vụ hồ sơ đề cử Di sản thế giới",
+            "slug": "khao-sat-angkor-borei-campuchia-ho-so-di-san-the-gioi",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Trong khuôn khổ nhiệm vụ xây dựng hồ sơ đề cử Di sản thế giới, đoàn công tác của Viện Bảo tồn di tích, cùng các chuyên gia Bảo tàng Lịch sử, Hội Khảo cổ học và cán bộ Ban Quản lý Di tích Văn hóa Óc Eo, đã hoàn thành chuyến khảo sát hệ thống di tích Angkor Borei (tỉnh Takeo, Campuchia).</p><p>Kết quả khảo sát nhằm bổ sung tư liệu đối sánh, làm cơ sở hoàn thiện báo cáo giải trình, làm rõ các nội dung hồ sơ với các chuyên gia trong nước và quốc tế.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-05-08T09:00:00.000Z",
+            "updated_at": "2026-05-08T09:00:00.000Z",
+            "published_at": "2026-05-08T09:00:00.000Z",
+            "custom_excerpt": "Đoàn công tác liên ngành khảo sát di tích Angkor Borei tại Campuchia, bổ sung tư liệu cho hồ sơ UNESCO...",
+            "feature_image": "https://images.unsplash.com/photo-1600684992368-ea5a56f0a0b2"
+          },
+          {
+            "id": "post_8",
+            "title": "Hội thảo chuyên gia về phát triển du lịch biển đảo bền vững gắn với bảo tồn di sản văn hóa và thiên nhiên",
+            "slug": "hoi-thao-phat-trien-du-lich-bien-dao-ben-vung",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Chiều ngày 11/3/2026, Viện Bảo tồn di tích tổ chức Hội thảo chuyên gia với chủ đề: \"Định hướng, giải pháp và đề xuất các mô hình phát triển du lịch biển đảo bền vững gắn với bảo tồn di sản văn hóa và thiên nhiên ở tỉnh Quảng Ngãi và vùng lân cận\".</p><p>Hội thảo được tổ chức trong khuôn khổ đề tài khoa học cấp quốc gia: \"Nghiên cứu phát triển du lịch biển đảo bền vững gắn với bảo tồn di sản văn hóa và thiên nhiên ở tỉnh Quảng Ngãi và vùng lân cận\". Hội thảo do TS.KTS Hoàng Đạo Cương – Thứ trưởng Bộ Văn hóa, Thể thao và Du lịch, Chủ nhiệm đề tài và TS. Nguyễn Thế Hùng đồng chủ trì.</p><p>Tham dự hội thảo, về phía Viện Bảo tồn di tích có ông Đặng Khánh Ngọc – Viện trưởng; ông Trần Quốc Tuấn – Phó Viện trưởng; bà Trần Thị Minh Huệ – Phó Viện trưởng. Các chuyên gia, nhà khoa học tham dự hội thảo có: GS.TS.KTS. Hoàng Đạo Kính; ThS. Đỗ Thị Yến Ngọc; TS. Nguyễn Anh Tuấn; TS. Nguyễn Quốc Tuân; ThS Ngô Tùng Sơn, cùng phụ trách, cán bộ nghiên cứu các phòng, trung tâm và đại diện nhóm nghiên cứu.</p><p>Tại hội thảo, nhóm nghiên cứu đã trình bày một số kết quả nghiên cứu của đề tài, tập trung vào việc nhận diện hệ thống tài nguyên di sản văn hóa và thiên nhiên của tỉnh Quảng Ngãi, đánh giá thực trạng phát triển du lịch biển đảo và những vấn đề đặt ra trong mối quan hệ giữa phát triển du lịch với bảo tồn di sản và môi trường sinh thái.</p><p>Các đại biểu đã trao đổi, góp ý về định hướng phát triển, các nhóm giải pháp và các mô hình phát triển du lịch biển đảo bền vững được đề xuất trong đề tài, làm cơ sở tiếp tục hoàn thiện nội dung nghiên cứu và Báo cáo tổng hợp của đề tài.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-03-11T15:00:00.000Z",
+            "updated_at": "2026-03-11T15:00:00.000Z",
+            "published_at": "2026-03-11T15:00:00.000Z",
+            "custom_excerpt": "Viện Bảo tồn di tích tổ chức hội thảo về phát triển du lịch biển đảo bền vững tại Quảng Ngãi...",
+            "feature_image": "https://images.unsplash.com/photo-1583417319070-4a69bed7ac2b"
+          },
+          {
+            "id": "post_9",
+            "title": "Triển khai các nhiệm vụ chuyên môn năm 2026",
+            "slug": "trien-khai-cac-nhiem-vu-chuyen-mon-nam-2026",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Ngày 04/3/2026, Viện Bảo tồn di tích tổ chức họp xét duyệt đề cương nhiệm vụ thường xuyên theo chức năng năm 2026 của Viện.</p><p>Cuộc họp được tổ chức trên cơ sở danh mục nhiệm vụ thường xuyên theo chức năng năm 2026 của Viện Bảo tồn di tích đã được Bộ Văn hóa, Thể thao và Du lịch phê duyệt.</p><p>Tại cuộc họp, các chủ nhiệm nhiệm vụ đã trình bày nội dung đề cương; Hội đồng khoa học của Viện và các đại biểu tham dự đã trao đổi, góp ý nhằm làm rõ mục tiêu, nội dung và sản phẩm dự kiến của từng nhiệm vụ. Trên cơ sở đó, các đề cương sẽ tiếp tục được hoàn thiện để triển khai thực hiện trong năm 2026.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-03-04T09:00:00.000Z",
+            "updated_at": "2026-03-04T09:00:00.000Z",
+            "published_at": "2026-03-04T09:00:00.000Z",
+            "custom_excerpt": "Viện họp xét duyệt đề cương nhiệm vụ thường xuyên theo chức năng năm 2026...",
+            "feature_image": "https://images.unsplash.com/photo-1590412850756-74fc245f7fbc"
+          },
+          {
+            "id": "post_10",
+            "title": "Viện Bảo tồn di tích tổ chức Hội nghị viên chức và người lao động năm 2026",
+            "slug": "hoi-nghi-vien-chuc-va-nguoi-lao-dong-nam-2026",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Chiều ngày 03/3/2026, Viện Bảo tồn di tích đã tổ chức Hội nghị viên chức năm 2026 với sự tham dự của toàn thể viên chức và người lao động trong Viện.</p><p>Chủ trì Hội nghị là Đoàn Chủ tịch gồm: Ông Đặng Khánh Ngọc – Viện trưởng; Bà Trần Thị Minh Huệ – Phó Viện trưởng; Ông Phạm Mạnh Cường – Chủ tịch Công đoàn Viện. Hội nghị có sự tham gia đầy đủ của viên chức các phòng chuyên môn, đơn vị trực thuộc và đại diện các tổ chức đoàn thể trong Viện.</p><p>Hội nghị được tổ chức trong bối cảnh Viện Bảo tồn di tích tiếp tục triển khai cơ chế tự chủ theo quy định hiện hành, với lộ trình tiến tới tự chủ hoàn toàn chi thường xuyên giai đoạn 2025–2030 theo phương án đã được Bộ Văn hóa, Thể thao và Du lịch phê duyệt. Điều này đặt ra yêu cầu ngày càng cao đối với năng lực quản trị, hiệu quả sử dụng nguồn lực và trách nhiệm của mỗi viên chức trong thực thi nhiệm vụ.</p><p>Đồng thời, Viện tiếp tục quán triệt và triển khai các chủ trương lớn của Đảng và Nhà nước, trong đó có Nghị quyết số 57-NQ/TW, Nghị quyết số 79-NQ/TW và Nghị quyết số 80-NQ/TW. Với vị thế là tổ chức khoa học và công nghệ thuộc Bộ Văn hóa, Thể thao và Du lịch, Viện xác định rõ trách nhiệm trong việc đẩy mạnh nghiên cứu và ứng dụng khoa học công nghệ, tăng cường chuyển đổi số, nâng cao năng lực tự chủ và quản trị; đồng thời góp phần bảo tồn và phát huy bền vững giá trị di tích, phát triển nguồn nhân lực chuyên sâu trong lĩnh vực bảo tồn di sản.</p><p>Đáng chú ý, năm 2025 ghi nhận những chuyển biến tích cực và kết quả nổi bật trên nhiều mặt công tác. Với những kết quả đạt được, Viện vinh dự được công nhận danh hiệu Tập thể hoàn thành xuất sắc nhiệm vụ, khẳng định sự nỗ lực, đoàn kết và trách nhiệm của toàn thể viên chức, người lao động trong đơn vị. Đây là tiền đề quan trọng để Viện tiếp tục triển khai phương hướng, nhiệm vụ năm 2026 với tinh thần chủ động và quyết tâm cao hơn.</p><p>Hội nghị đã ghi nhận nhiều ý kiến phát biểu thẳng thắn, trách nhiệm và mang tính xây dựng của viên chức và lãnh đạo, phụ trách các phòng chuyên môn. Trên cơ sở đó, Hội nghị thống nhất xác định các nhiệm vụ trọng tâm của Viện trong giai đoạn tới, gắn với bốn định hướng phát triển của ngành theo chỉ đạo của Thủ tướng Chính phủ; trong đó nhấn mạnh yêu cầu để văn hóa thực sự thấm sâu vào đời sống, trở thành động lực và nguồn lực quan trọng cho phát triển bền vững.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-03-03T15:00:00.000Z",
+            "updated_at": "2026-03-03T15:00:00.000Z",
+            "published_at": "2026-03-03T15:00:00.000Z",
+            "custom_excerpt": "Toàn thể viên chức và người lao động tham dự Hội nghị viên chức năm 2026, đề ra phương hướng nhiệm vụ trọng tâm...",
+            "feature_image": "https://images.unsplash.com/photo-1544531586-f0b3b4c1f1b2"
+          },
+          {
+            "id": "post_11",
+            "title": "Viện Bảo tồn di tích tham dự Hội nghị toàn quốc quán triệt và triển khai thực hiện Nghị quyết của Bộ Chính trị",
+            "slug": "vien-bao-ton-tham-du-hoi-nghi-toan-quoc-quan-triet-nghi-quyet-bo-chinh-tri",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Sáng 25/02/2026, Viện Bảo tồn di tích tham dự Hội nghị toàn quốc nghiên cứu, học tập, quán triệt và triển khai thực hiện Nghị quyết số 79-NQ/TW về phát triển kinh tế Nhà nước và Nghị quyết số 80-NQ/TW về phát triển văn hóa Việt Nam của Bộ Chính trị.</p><p>Hội nghị được tổ chức theo hình thức trực tiếp kết hợp trực tuyến từ điểm cầu chính tại Phòng họp Diên Hồng, Nhà Quốc hội đến các điểm cầu trong toàn quốc. Hội nghị có sự tham dự của các đồng chí lãnh đạo Đảng, Nhà nước, lãnh đạo các ban, bộ, ngành Trung ương và nghe ý kiến phát biểu chỉ đạo của đồng chí Tổng Bí thư Tô Lâm.</p><p>Tại Hội nghị, các đại biểu được quán triệt những nội dung trọng tâm, cốt lõi của hai Nghị quyết; các điểm mới, định hướng đột phá và chương trình hành động triển khai thực hiện trong thời gian tới.</p><p>Việc nghiên cứu, học tập và quán triệt các Nghị quyết là cơ sở quan trọng để định hướng hoạt động tham mưu, nghiên cứu khoa học, bảo quản, tu bổ và phát huy giá trị di tích của Viện, góp phần cụ thể hóa các chủ trương của Đảng trong lĩnh vực bảo tồn di sản văn hóa.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-02-25T09:00:00.000Z",
+            "updated_at": "2026-02-25T09:00:00.000Z",
+            "published_at": "2026-02-25T09:00:00.000Z",
+            "custom_excerpt": "Viện tham dự hội nghị toàn quốc quán triệt Nghị quyết 79 và 80 của Bộ Chính trị...",
+            "feature_image": "https://images.unsplash.com/photo-1582654454009-2bca7f9cd27a"
+          },
+          {
+            "id": "post_12",
+            "title": "Khai xuân Bính Ngọ 2026 – Tiếp tục triển khai các nhiệm vụ trọng tâm theo chỉ đạo của Thủ tướng Chính phủ",
+            "slug": "khai-xuan-binh-ngo-2026-trien-khai-nhiem-vu-trong-tam",
+            "mobiledoc": "{\"version\":\"0.3.1\",\"markups\":[],\"atoms\":[],\"cards\":[[\"html\",{\"html\":\"<p>Chiều 23/02/2026, tại Hà Nội, trong ngày làm việc chính thức đầu tiên sau Tết, Thủ tướng Phạm Minh Chính đã tới thăm, làm việc với Bộ Văn hóa, Thể thao và Du lịch và gặp mặt, động viên các nhà văn hóa, trí thức, văn nghệ sĩ, nhà báo, phóng viên, vận động viên, huấn luyện viên, đại diện các doanh nghiệp văn hoá, du lịch, doanh nhân tiêu biểu trong lĩnh vực văn hóa, thể thao và du lịch.</p><p>Cùng dự có Phó Thủ tướng Chính phủ Mai Văn Chính; Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch Nguyễn Văn Hùng; Thứ trưởng Thường trực Bộ Văn hóa, Thể thao và Du lịch Lâm Thị Phương Thanh cùng lãnh đạo các bộ ngành, cơ quan.</p><p>Trên cơ sở nội dung buổi làm việc, Viện Bảo tồn di tích nghiêm túc tiếp thu và quán triệt các định hướng, nhiệm vụ trọng tâm của ngành trong năm 2026.</p><h2>5 điểm sáng nổi bật của ngành Văn hóa, Thể thao và Du lịch</h2><p>Thủ tướng nhấn mạnh vị trí, vai trò, tầm quan trọng của nội lực (gồm con người, thiên nhiên và truyền thống văn hóa - lịch sử), trong đó văn hóa là nền tảng tinh thần, sức mạnh nội sinh; đồng thời khái quát 5 điểm sáng của ngành trong thời gian qua:</p><ul><li>Các hoạt động văn hóa, lễ hội được quản lý và tổ chức đúng quy định, đậm nét truyền thống văn hóa, lịch sử của dân tộc, có nhiều điểm mới, sáng tạo, xuất phát từ cơ sở, hướng mạnh về người dân.</li><li>Hoạt động thông tin, tuyên truyền diễn ra hiệu quả, góp phần tạo không khí vui tươi, phấn khởi, củng cố niềm tin của Nhân dân và bảo đảm ổn định xã hội trong dịp đầu năm mới.</li><li>Các hoạt động thể dục, thể thao diễn ra an toàn, hiệu quả, đáp ứng nhu cầu vui chơi, rèn luyện sức khỏe của Nhân dân.</li><li>Nhiều chương trình văn hóa, nghệ thuật đặc sắc, ý nghĩa được tổ chức rộng khắp trên cả nước, góp phần nâng cao đời sống tinh thần của Nhân dân và quảng bá hình ảnh tươi đẹp của đất nước, con người Việt Nam trên toàn thế giới.</li><li>Hoạt động du lịch khởi sắc đã tạo đà, tạo lực, tạo thế cho sự phát triển nhanh, bền vững theo hướng tiếp cận đa ngành, sản phẩm đặc sắc, mở rộng thị trường. Trong kỳ nghỉ Tết vừa qua, đã có khoảng 12 - 15 triệu lượt khách nội địa; khách quốc tế đến Việt Nam trong tháng 1 và dịp Tết đạt mức kỷ lục, hướng tới mốc 2,5 triệu lượt/tháng.</li></ul><h2>Triển khai quyết liệt 9 nhóm nhiệm vụ trọng tâm năm 2026</h2><p>Thủ tướng nhấn mạnh năm 2026 là năm có ý nghĩa đặc biệt quan trọng: năm đầu triển khai Nghị quyết Đại hội lần thứ XIV của Đảng; tổ chức bầu cử đại biểu Quốc hội khóa XVI và đại biểu HĐND các cấp nhiệm kỳ 2026-2031; năm đầu triển khai Kế hoạch phát triển KTXH 5 năm 2026-2030; đồng thời là năm đầu triển khai Nghị quyết số 80-NQ/TW của Bộ Chính trị về phát triển văn hóa Việt Nam.</p><p>Với tinh thần \"Bắt tay vào việc ngay từ ngày đầu, tháng đầu\", thực hiện phương châm \"4 không\" và \"6 rõ\", Thủ tướng đề nghị tập trung triển khai quyết liệt 9 nhóm nhiệm vụ trọng tâm:</p><ol><li>Tiếp tục đẩy mạnh hoàn thiện thể chế, chính sách; ưu tiên các cơ chế, chính sách đặc thù, tháo gỡ \"điểm nghẽn\" để huy động nguồn lực cho phát triển văn hóa; thúc đẩy hợp tác công tư trong lĩnh vực văn hóa; triển khai mô hình lãnh đạo công - quản trị tư; đầu tư công - quản lý tư; đầu tư tư - sử dụng công đối với một số thiết chế văn hóa, thể thao.</li><li>Tập trung triển khai Chương trình mục tiêu quốc gia về văn hóa giai đoạn 2025-2035; bám sát mục tiêu, nguyên tắc, tiêu chí, đối tượng thụ hưởng; đẩy mạnh phân cấp, phân quyền; đặc biệt lưu ý thúc đẩy phát triển các hệ sinh thái văn hóa.</li><li>Thực hiện hiệu quả Chiến lược phát triển các ngành công nghiệp văn hóa, công nghiệp giải trí; tập trung đầu tư, hoàn thiện hạ tầng văn hóa, ưu tiên các thiết chế văn hóa quy mô quốc gia, từng bước vươn tầm quốc tế.</li><li>Tạo đột phá trong phát triển thể thao Việt Nam; chú trọng phát triển hài hòa thể thao quần chúng và thể thao thành tích cao; đầu tư có trọng tâm, trọng điểm; ứng dụng mạnh mẽ khoa học công nghệ, y học thể thao và chuyển đổi số trong huấn luyện và thi đấu.</li><li>Tái cấu trúc, nâng cao chất lượng và sức cạnh tranh, đưa du lịch thực sự trở thành ngành kinh tế mũi nhọn; phấn đấu năm 2026 đón 25 triệu lượt khách du lịch quốc tế và phục vụ 150 triệu lượt khách du lịch nội địa.</li><li>Phát huy vai trò xung kích của báo chí, truyền thông; chủ động định hướng dư luận; xây dựng không gian truyền thông lành mạnh, hiện đại; hình thành những diễn đàn lý luận văn hóa sắc bén, có tầm ảnh hưởng khu vực.</li><li>Đẩy mạnh ứng dụng khoa học công nghệ, đổi mới sáng tạo, chuyển đổi số trong toàn ngành; chuẩn bị chu đáo và tổ chức thành công các sự kiện chính trị - văn hóa quan trọng của đất nước năm 2026.</li><li>Tiếp tục đẩy mạnh sắp xếp, tinh gọn tổ chức bộ máy; bảo đảm hoạt động thông suốt, hiệu lực, hiệu quả; triển khai cơ chế theo dõi, báo cáo, đánh giá kết quả (KPI) bảo đảm hiệu quả, thực chất, công khai minh bạch kết quả cụ thể.</li><li>Tiên phong trong chuyển đổi số, chuyển đổi xanh trong ngành văn hóa, thể thao, du lịch, lĩnh vực báo chí.</li></ol><p>Thủ tướng cũng nhấn mạnh 4 định hướng chủ đạo trong phát triển ngành: văn hóa thấm sâu, tạo động lực, truyền cảm hứng; thể thao tạo sức bật, nâng tầm vóc; du lịch giàu bản sắc, chạm cảm xúc, tăng giá trị; thông tin - truyền thông chủ động dẫn dắt, vững tin.</p><p>Buổi làm việc là cơ sở định hướng quan trọng để Viện Bảo tồn di tích cụ thể hóa các nhiệm vụ năm 2026, bảo đảm thực hiện thống nhất theo tinh thần chỉ đạo của Thủ tướng Chính phủ và Bộ Văn hóa, Thể thao và Du lịch.</p>\"}]],\"sections\":[[10,0]]}",
+            "status": "published",
+            "visibility": "public",
+            "created_at": "2026-02-23T15:00:00.000Z",
+            "updated_at": "2026-02-23T15:00:00.000Z",
+            "published_at": "2026-02-23T15:00:00.000Z",
+            "custom_excerpt": "Thủ tướng Phạm Minh Chính thăm và làm việc với Bộ VHTTDL ngày đầu năm mới, đề ra 9 nhóm nhiệm vụ trọng tâm 2026...",
+            "feature_image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
           }
         ],
         "posts_tags": [
-          { "post_id": "post_1", "tag_id": "tag_tintuc", "sort_order": 0 },
-          { "post_id": "post_2", "tag_id": "tag_nghiencuu", "sort_order": 0 },
-          { "post_id": "post_3", "tag_id": "tag_tintuc", "sort_order": 0 },
-          { "post_id": "post_4", "tag_id": "tag_nghiencuu", "sort_order": 0 },
-          { "post_id": "post_5", "tag_id": "tag_tintuc", "sort_order": 0 }
+          { "post_id": "post_1", "tag_id": "tag_tin-tuc", "sort_order": 0 },
+          { "post_id": "post_1", "tag_id": "tag_tu-bo-phuc-hoi", "sort_order": 1 },
+          { "post_id": "post_2", "tag_id": "tag_nghien-cuu", "sort_order": 0 },
+          { "post_id": "post_2", "tag_id": "tag_an-pham-khoa-hoc", "sort_order": 1 },
+          { "post_id": "post_3", "tag_id": "tag_tin-tuc", "sort_order": 0 },
+          { "post_id": "post_4", "tag_id": "tag_nghien-cuu", "sort_order": 0 },
+          { "post_id": "post_4", "tag_id": "tag_tu-bo-phuc-hoi", "sort_order": 1 },
+          { "post_id": "post_5", "tag_id": "tag_tin-tuc", "sort_order": 0 },
+
+          { "post_id": "post_6", "tag_id": "tag_tu-bo-phuc-hoi", "sort_order": 0 },
+          { "post_id": "post_6", "tag_id": "tag_khao-sat-danh-gia", "sort_order": 1 },
+          { "post_id": "post_6", "tag_id": "tag_tin-hoat-dong-vien", "sort_order": 2 },
+
+          { "post_id": "post_7", "tag_id": "tag_ho-so-unesco", "sort_order": 0 },
+          { "post_id": "post_7", "tag_id": "tag_hop-tac-quoc-te", "sort_order": 1 },
+          { "post_id": "post_7", "tag_id": "tag_khao-sat-danh-gia", "sort_order": 2 },
+
+          { "post_id": "post_8", "tag_id": "tag_hoi-thao-khoa-hoc", "sort_order": 0 },
+          { "post_id": "post_8", "tag_id": "tag_de-tai-cap-nha-nuoc", "sort_order": 1 },
+          { "post_id": "post_8", "tag_id": "tag_tin-hoat-dong-vien", "sort_order": 2 },
+
+          { "post_id": "post_9", "tag_id": "tag_nhiem-vu-thuong-xuyen", "sort_order": 0 },
+          { "post_id": "post_9", "tag_id": "tag_tin-hoat-dong-vien", "sort_order": 1 },
+
+          { "post_id": "post_10", "tag_id": "tag_tin-hoat-dong-vien", "sort_order": 0 },
+
+          { "post_id": "post_11", "tag_id": "tag_tin-chi-dao-bo", "sort_order": 0 },
+          { "post_id": "post_11", "tag_id": "tag_tin-hoat-dong-vien", "sort_order": 1 },
+
+          { "post_id": "post_12", "tag_id": "tag_tin-chi-dao-bo", "sort_order": 0 },
+          { "post_id": "post_12", "tag_id": "tag_tin-hoat-dong-vien", "sort_order": 1 }
         ]
       }
     }

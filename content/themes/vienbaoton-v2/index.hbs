@@ -1,0 +1,207 @@
+{{!< default}}
+<div class="home-container">
+
+    <!-- Hero Section Carousel -->
+    <section class="hero-section">
+        <div class="hero-carousel">
+            {{#get "posts" limit="3" include="tags,authors"}}
+            {{#foreach posts}}
+            <div class="hero-slide {{#if @first}}active{{/if}}">
+                <div class="hero-grid">
+                    {{#if feature_image}}
+                    <div class="hero-image-mask" style="background-image: url('{{img_url feature_image size="xl"}}');"></div>
+                    {{/if}}
+                    <div class="hero-content">
+                        <div class="hero-meta">{{#if primary_tag}}{{primary_tag.name}}{{else}}{{t "Home.focus"}}{{/if}} &bull;
+                            {{reading_time minute=(t "Post.min_read") minutes=(t "Post.mins_read")}}</div>
+                        <h1 class="hero-title">{{title}}</h1>
+                        <p class="hero-excerpt">{{excerpt words="30"}}...</p>
+                        <div class="hero-author-date">
+                            <span>{{primary_author.name}}</span> &bull; <time>{{date format="DD/MM/YYYY"}}</time>
+                        </div>
+                        <a href="{{url}}" class="hero-btn">{{t "Home.read_more"}}</a>
+                    </div>
+                </div>
+            </div>
+            {{/foreach}}
+            {{/get}}
+
+            <!-- Carousel Controls -->
+            <div class="carousel-controls">
+                <button class="carousel-prev" aria-label="Trước">&larr;</button>
+                <button class="carousel-next" aria-label="Sau">&rarr;</button>
+            </div>
+            <div class="carousel-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thông điệp Viện -->
+    <section class="institute-intro">
+        <div class="intro-grid">
+            <div class="intro-content">
+                <h2 class="intro-title">{{t "Home.intro_title"}}</h2>
+                <p>{{t "Home.intro_body"}}</p>
+                <a href="/gioi-thieu" class="btn-primary" style="margin-top: 1rem; display: inline-block;">{{t "Home.intro_btn"}}</a>
+            </div>
+            <div class="intro-stats">
+                <div class="stat-item">
+                    <span class="stat-number">40+</span>
+                    <span class="stat-label">{{t "Home.stat_years"}}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">{{t "Home.stat_projects"}}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">14+</span>
+                    <span class="stat-label">{{t "Home.stat_theses"}}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">{{t "Home.stat_heritage"}}</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tin tức Viện -->
+    <section class="news-section" id="tin-tuc">
+        <div class="section-header">
+            <h2>{{t "Home.news_title"}}</h2>
+            <a href="/tag/tin-tuc" class="view-all">{{t "Home.view_all"}} &rarr;</a>
+        </div>
+
+        <div class="news-grid">
+            {{#get "posts" limit="5" include="tags"}}
+            {{#foreach posts}}
+            <article class="news-card {{#if @first}}featured-card{{/if}}">
+                {{#if feature_image}}
+                <a class="news-card-image-link" href="{{url}}">
+                    <img class="news-card-image" src="{{img_url feature_image size="m"}}" alt="{{title}}" />
+                </a>
+                {{/if}}
+                <div class="news-card-content">
+                    <div class="news-card-meta">
+                        {{#if primary_tag}}
+                        <span class="news-tag">{{primary_tag.name}}</span> &bull;
+                        {{/if}}
+                        <time>{{date format="DD/MM/YYYY"}}</time>
+                    </div>
+                    <h3 class="news-card-title"><a href="{{url}}">{{title}}</a></h3>
+                    {{#if @first}}
+                    <p class="news-card-excerpt">{{excerpt words="25"}}...</p>
+                    {{/if}}
+                </div>
+            </article>
+            {{/foreach}}
+            {{/get}}
+        </div>
+    </section>
+
+    <!-- Nghiên cứu Khoa học -->
+    <section class="research-section">
+        <div class="section-header">
+            <h2>{{t "Home.research_title"}}</h2>
+            <a href="/tag/nghien-cuu" class="view-all">{{t "Home.view_all"}} &rarr;</a>
+        </div>
+
+        <div class="research-grid">
+            {{#get "posts" limit="4"}}
+            {{#foreach posts}}
+            <article class="research-card">
+                {{#if feature_image}}
+                <a href="{{url}}" class="research-image-link">
+                    <img src="{{img_url feature_image size="s"}}" alt="{{title}}" />
+                </a>
+                {{/if}}
+                <div class="research-card-content">
+                    <h3 class="research-title"><a href="{{url}}">{{title}}</a></h3>
+                </div>
+            </article>
+            {{/foreach}}
+            {{/get}}
+        </div>
+    </section>
+
+    <!-- Hội thảo & Sự kiện -->
+    <section class="events-section">
+        <div class="section-header">
+            <h2>{{t "Home.events_title"}}</h2>
+            <a href="/tag/su-kien" class="view-all">{{t "Home.view_all"}} &rarr;</a>
+        </div>
+        <div class="events-banner">
+            <div class="events-banner-content">
+                <h3>{{t "Home.events_banner_title"}}</h3>
+                <p>{{t "Home.events_banner_body"}}</p>
+                <a href="/su-kien" class="btn-secondary">{{t "Home.events_btn"}}</a>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll('.hero-slide');
+    if (!slides.length) return;
+
+    const indicators = document.querySelectorAll('.indicator');
+    let currentSlide = 0;
+    let slideInterval;
+
+    function showSlide(index) {
+        slides.forEach(function(slide, i) {
+            slide.classList.remove('active');
+            if (indicators[i]) indicators[i].classList.remove('active');
+        });
+        slides[index].classList.add('active');
+        if (indicators[index]) indicators[index].classList.add('active');
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    var btnNext = document.querySelector('.carousel-next');
+    var btnPrev = document.querySelector('.carousel-prev');
+
+    if (btnNext) {
+        btnNext.addEventListener('click', function() {
+            nextSlide();
+            resetInterval();
+        });
+    }
+
+    if (btnPrev) {
+        btnPrev.addEventListener('click', function() {
+            prevSlide();
+            resetInterval();
+        });
+    }
+
+    indicators.forEach(function(ind, i) {
+        ind.addEventListener('click', function() {
+            currentSlide = i;
+            showSlide(currentSlide);
+            resetInterval();
+        });
+    });
+
+    function resetInterval() {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, 7000);
+    }
+
+    slideInterval = setInterval(nextSlide, 7000);
+});
+</script>

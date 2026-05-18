@@ -1,0 +1,79 @@
+{{!< default}}
+
+{{#post}}
+<div class="post-container">
+    <article class="single-post {{post_class}}">
+        <header class="single-header">
+            {{#if primary_tag}}
+                <a href="{{primary_tag.url}}" class="single-tag">{{primary_tag.name}}</a>
+            {{/if}}
+
+            <h1 class="single-title">{{title}}</h1>
+
+            <div class="single-meta">
+                <span class="meta-author">{{t "Post.by"}} {{authors}}</span>
+                <span class="meta-divider">&#x2756;</span>
+                <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD/MM/YYYY"}}</time>
+                <span class="meta-divider">&#x2756;</span>
+                <span>{{reading_time minute=(t "Post.min_read") minutes=(t "Post.mins_read")}}</span>
+            </div>
+            <div class="single-header-line"></div>
+        </header>
+
+        {{#if feature_image}}
+            <figure class="single-feature-image">
+                <div class="feature-image-frame">
+                    <img src="{{img_url feature_image size="xl"}}" alt="{{title}}" />
+                </div>
+                {{#if feature_image_caption}}
+                    <figcaption class="image-caption">{{feature_image_caption}}</figcaption>
+                {{/if}}
+            </figure>
+        {{/if}}
+
+        <section class="single-content gh-content">
+            {{content}}
+        </section>
+
+        <footer class="single-footer">
+            <div class="post-tags">
+                <span>{{t "Post.tag_label"}}</span>
+                {{#foreach tags}}
+                <a href="{{url}}">{{name}}</a>
+                {{/foreach}}
+            </div>
+        </footer>
+    </article>
+
+    <!-- Bài viết liên quan -->
+    <aside class="related-posts-section">
+        <div class="section-header">
+            <h2>{{t "Post.related_title"}}</h2>
+        </div>
+        <div class="news-grid" style="grid-template-columns: repeat(3, 1fr);">
+            {{#get "posts" limit="3" filter="tag:{{primary_tag.slug}}+id:-{{id}}" include="tags"}}
+                {{#foreach posts}}
+                    <article class="news-card">
+                        {{#if feature_image}}
+                        <a class="news-card-image-link" href="{{url}}">
+                            <img class="news-card-image" src="{{img_url feature_image size="m"}}" alt="{{title}}" />
+                        </a>
+                        {{/if}}
+                        <div class="news-card-content">
+                            <div class="news-card-meta">
+                                {{#if primary_tag}}
+                                <span class="news-tag">{{primary_tag.name}}</span> &bull;
+                                {{/if}}
+                                <time>{{date format="DD/MM/YYYY"}}</time>
+                            </div>
+                            <h3 class="news-card-title"><a href="{{url}}">{{title}}</a></h3>
+                        </div>
+                    </article>
+                {{/foreach}}
+            {{else}}
+                <p style="text-align: center; color: var(--text-muted); font-style: italic; width: 100%; grid-column: span 3;">{{t "Post.related_empty"}}</p>
+            {{/get}}
+        </div>
+    </aside>
+</div>
+{{/post}}

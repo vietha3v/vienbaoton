@@ -1,0 +1,66 @@
+{{!< default}}
+<div class="tag-detail-page">
+    <div class="page-header">
+        <div class="page-header-inner">
+            {{#if author.profile_image}}
+            <img src="{{author.profile_image}}" alt="{{author.name}}" class="author-avatar" />
+            {{/if}}
+            <h1 class="page-title">{{author.name}}</h1>
+            {{#if author.bio}}
+            <p class="page-subtitle">{{author.bio}}</p>
+            {{/if}}
+            {{#if author.website}}
+            <a href="{{author.website}}" class="author-website" target="_blank" rel="noopener">{{author.website}}</a>
+            {{/if}}
+        </div>
+    </div>
+
+    <div class="page-container">
+        <div class="tag-posts-section">
+            {{#if posts}}
+            <div class="posts-grid">
+                {{#foreach posts}}
+                <a href="{{url}}" class="post-card">
+                    {{#if feature_image}}
+                    <div class="post-card-image">
+                        <img src="{{img_url feature_image size="m"}}" alt="{{title}}" loading="lazy" />
+                    </div>
+                    {{/if}}
+                    <div class="post-card-content">
+                        <h3 class="post-card-title">{{title}}</h3>
+                        <p class="post-card-excerpt">{{excerpt words="20"}}...</p>
+                        <div class="post-card-meta">
+                            <span class="post-card-date">{{date format="DD/MM/YYYY"}}</span>
+                            <span class="post-card-reading-time">{{reading_time minute=(t "Post.min_read") minutes=(t "Post.mins_read")}}</span>
+                        </div>
+                    </div>
+                </a>
+                {{/foreach}}
+            </div>
+            {{else}}
+            <div class="empty-posts">
+                <p>{{t "Author.no_posts"}}</p>
+            </div>
+            {{/if}}
+
+            {{pagination}}
+        </div>
+    </div>
+</div>
+
+<style>
+.author-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--gold-accent);
+    margin-bottom: 1rem;
+}
+.author-website {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--gold-accent);
+    font-size: 0.9rem;
+}
+</style>

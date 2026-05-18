@@ -1,0 +1,44 @@
+{{!< default}}
+<div class="gallery-page">
+    <div class="page-header">
+        <div class="page-header-inner">
+            <h1 class="page-title">{{t "Gallery.title"}}</h1>
+            <p class="page-subtitle">{{t "Gallery.subtitle"}}</p>
+        </div>
+    </div>
+
+    <div class="page-container">
+        <div class="gallery-section">
+            {{#get "pages" limit="all" filter="tag:album" order="published_at desc"}}
+                {{#if pages}}
+                <div class="album-grid">
+                    {{#foreach pages}}
+                    <a href="{{url}}" class="album-card">
+                        <div class="album-cover">
+                            {{#if feature_image}}
+                            <img src="{{img_url feature_image size="m"}}" alt="{{title}}" loading="lazy" />
+                            {{else}}
+                            <div class="album-cover-placeholder"></div>
+                            {{/if}}
+                            <div class="album-overlay">
+                                <span class="view-album-btn">{{t "Gallery.view_album"}}</span>
+                            </div>
+                        </div>
+                        <div class="album-info">
+                            <h3 class="album-title">{{title}}</h3>
+                            {{#if excerpt}}
+                            <p class="album-description">{{excerpt words="15"}}</p>
+                            {{/if}}
+                        </div>
+                    </a>
+                    {{/foreach}}
+                </div>
+                {{else}}
+                <div class="empty-gallery">
+                    <p>{{t "Gallery.empty"}}</p>
+                </div>
+                {{/if}}
+            {{/get}}
+        </div>
+    </div>
+</div>

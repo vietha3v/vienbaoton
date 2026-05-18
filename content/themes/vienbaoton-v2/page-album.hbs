@@ -1,0 +1,50 @@
+{{!< default}}
+<div class="album-detail-page">
+    {{#post}}
+    <div class="page-header">
+        <div class="page-header-inner">
+            <h1 class="page-title">{{title}}</h1>
+            {{#if excerpt}}
+            <p class="page-subtitle">{{excerpt}}</p>
+            {{/if}}
+            <a href="/ngan-hang-hinh-anh" class="back-to-gallery">{{t "Gallery.back"}}</a>
+        </div>
+    </div>
+
+    <div class="page-container">
+        <div class="album-detail-section">
+            {{#if feature_image}}
+            <div class="album-featured-image">
+                <img src="{{img_url feature_image size="l"}}" alt="{{title}}" />
+            </div>
+            {{/if}}
+
+            <div class="album-content">
+                {{content}}
+            </div>
+        </div>
+    </div>
+    {{/post}}
+</div>
+
+<style>
+.back-to-gallery {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--gold-light);
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+.back-to-gallery:hover { opacity: 1; color: var(--gold-light); }
+.album-featured-image {
+    margin-bottom: 2rem;
+    border: 1px solid var(--border-color);
+    padding: 4px;
+    background: var(--bg-card);
+}
+.album-featured-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+</style>

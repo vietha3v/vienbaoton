@@ -1,0 +1,43 @@
+{{!< default}}
+<div class="tag-detail-page">
+    <div class="page-header">
+        <div class="page-header-inner">
+            <h1 class="page-title">{{tag.name}}</h1>
+            {{#if tag.description}}
+            <p class="page-subtitle">{{tag.description}}</p>
+            {{/if}}
+        </div>
+    </div>
+
+    <div class="page-container">
+        <div class="tag-posts-section">
+            {{#if posts}}
+            <div class="posts-grid">
+                {{#foreach posts}}
+                <a href="{{url}}" class="post-card">
+                    {{#if feature_image}}
+                    <div class="post-card-image">
+                        <img src="{{img_url feature_image size="m"}}" alt="{{title}}" loading="lazy" />
+                    </div>
+                    {{/if}}
+                    <div class="post-card-content">
+                        <h3 class="post-card-title">{{title}}</h3>
+                        <p class="post-card-excerpt">{{excerpt words="20"}}...</p>
+                        <div class="post-card-meta">
+                            <span class="post-card-date">{{date format="DD/MM/YYYY"}}</span>
+                            <span class="post-card-reading-time">{{reading_time minute=(t "Post.min_read") minutes=(t "Post.mins_read")}}</span>
+                        </div>
+                    </div>
+                </a>
+                {{/foreach}}
+            </div>
+            {{else}}
+            <div class="empty-posts">
+                <p>{{t "Tags.no_posts"}}</p>
+            </div>
+            {{/if}}
+
+            {{pagination}}
+        </div>
+    </div>
+</div>

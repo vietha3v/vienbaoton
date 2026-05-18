@@ -1,0 +1,33 @@
+{{!< default}}
+<div class="tags-page">
+    <div class="page-header">
+        <div class="page-header-inner">
+            <h1 class="page-title">{{t "Tags.title"}}</h1>
+            <p class="page-subtitle">{{t "Tags.subtitle"}}</p>
+        </div>
+    </div>
+
+    <div class="page-container">
+        <div class="tags-section">
+            {{#get "tags" limit="all" filter="visibility:public" order="count.posts desc" include="count.posts"}}
+                {{#if tags}}
+                <div class="tags-grid">
+                    {{#foreach tags}}
+                    <a href="{{url}}" class="tag-card">
+                        <div class="tag-card-content">
+                            <h3 class="tag-name">{{name}}</h3>
+                            <span class="tag-count">{{count.posts}} {{t "Tags.posts_count"}}</span>
+                        </div>
+                        <span class="tag-arrow">&rarr;</span>
+                    </a>
+                    {{/foreach}}
+                </div>
+                {{else}}
+                <div class="empty-tags">
+                    <p>{{t "Tags.no_tags"}}</p>
+                </div>
+                {{/if}}
+            {{/get}}
+        </div>
+    </div>
+</div>

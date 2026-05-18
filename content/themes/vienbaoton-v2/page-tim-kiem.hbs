@@ -1,0 +1,40 @@
+{{!< default}}
+<div class="search-page">
+    <div class="page-header">
+        <div class="page-header-inner">
+            <h1 class="page-title">{{t "Search.title"}}</h1>
+            <p class="page-subtitle">{{t "Search.subtitle"}}</p>
+        </div>
+    </div>
+
+    <div class="page-container">
+        <div class="search-section">
+            <div class="instant-search">
+                <div class="instant-search-form">
+                    <div class="instant-search-input-wrapper">
+                        <span class="search-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8" />
+                                <path d="m21 21-4.35-4.35" />
+                            </svg>
+                        </span>
+                        <input class="instant-search-input" type="text" placeholder="{{t "Search.placeholder"}}" data-ghost-search />
+                    </div>
+                </div>
+
+                <div class="search-suggestions">
+                    <p class="suggestions-title">{{t "Search.suggestions_title"}}</p>
+                    <div class="suggestion-tags">
+                        {{#get "tags" limit="8" filter="visibility:public" order="count.posts desc"}}
+                            {{#foreach tags}}
+                            <a href="{{url}}" class="suggestion-tag">{{name}}</a>
+                            {{/foreach}}
+                        {{/get}}
+                        <a href="/ngan-hang-hinh-anh" class="suggestion-tag">{{t "Navigation.other_reference_images"}}</a>
+                        <a href="/dao-tao-boi-duong" class="suggestion-tag">{{t "Navigation.other_training"}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

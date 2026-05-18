@@ -1,0 +1,89 @@
+{{!< default}}
+
+{{#post}}
+<div class="post-container">
+    <article class="single-post {{post_class}}">
+
+        <header class="single-header">
+            <h1 class="single-title">{{t "Timeline.title"}}</h1>
+            <div class="single-meta">
+                <span class="meta-author">{{t "Timeline.subtitle"}}</span>
+            </div>
+            <div class="single-header-line"></div>
+        </header>
+
+        {{#if feature_image}}
+            <figure class="single-feature-image">
+                <div class="feature-image-frame">
+                    <img src="{{img_url feature_image size="xl"}}" alt="{{title}}" />
+                </div>
+            </figure>
+        {{/if}}
+
+        <section class="single-content gh-content">
+            {{content}}
+        </section>
+
+        <!-- Heritage Timeline -->
+        <div class="heritage-timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot">&#x2726;</div>
+                <div class="timeline-content">
+                    <h3 class="timeline-year">1982</h3>
+                    <h4 class="timeline-event">{{t "Timeline.event_1982_title"}}</h4>
+                    <p>{{t "Timeline.event_1982_desc"}}</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot">&#x2726;</div>
+                <div class="timeline-content">
+                    <h3 class="timeline-year">1990</h3>
+                    <h4 class="timeline-event">{{t "Timeline.event_1990_title"}}</h4>
+                    <p>{{t "Timeline.event_1990_desc"}}</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot">&#x2726;</div>
+                <div class="timeline-content">
+                    <h3 class="timeline-year">1999</h3>
+                    <h4 class="timeline-event">{{t "Timeline.event_1999_title"}}</h4>
+                    <p>{{t "Timeline.event_1999_desc"}}</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot">&#x2726;</div>
+                <div class="timeline-content">
+                    <h3 class="timeline-year">2007</h3>
+                    <h4 class="timeline-event">{{t "Timeline.event_2007_title"}}</h4>
+                    <p>{{t "Timeline.event_2007_desc"}}</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot">&#x2726;</div>
+                <div class="timeline-content">
+                    <h3 class="timeline-year">2018</h3>
+                    <h4 class="timeline-event">{{t "Timeline.event_2018_title"}}</h4>
+                    <p>{{t "Timeline.event_2018_desc"}}</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot">&#x2726;</div>
+                <div class="timeline-content">
+                    <h3 class="timeline-year">{{t "Timeline.event_now_title"}}</h3>
+                    <h4 class="timeline-event">{{t "Timeline.event_now_title"}}</h4>
+                    <p>{{t "Timeline.event_now_desc"}}</p>
+                </div>
+            </div>
+
+            <div class="timeline-end">&#x25BC;</div>
+        </div>
+
+    </article>
+</div>
+{{/post}}

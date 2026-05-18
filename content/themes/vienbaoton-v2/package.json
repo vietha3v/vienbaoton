@@ -1,0 +1,13 @@
+{
+  "name": "vienbaoton-v2",
+  "description": "Redesign v2 — Heritage edition with warm wood tones, gold accents, and classical ornamentation",
+  "version": "2.0.0",
+  "engines": {
+    "ghost": ">=5.0.0",
+    "ghost-api": "v5.0.1"
+  },
+  "license": "MIT",
+  "config": {
+    "posts_per_page": 10
+  }
+}

@@ -1,0 +1,16 @@
+{{!< default}}
+<div class="error-container">
+    <div class="error-card">
+        <div class="error-icon">&#x2756;</div>
+        <h1 class="error-code">{{statusCode}}</h1>
+        <h2 class="error-title">{{t "Error.title"}}</h2>
+        <p class="error-message">{{t "Error.message"}}</p>
+        <div class="error-divider">
+            <span>&#x2726;</span>
+        </div>
+        <div class="error-actions">
+            <a href="{{@site.url}}" class="btn-primary">{{t "Error.home_btn"}}</a>
+            <a href="/tim-kiem" class="btn-secondary">{{t "Error.search_btn"}}</a>
+        </div>
+    </div>
+</div>
